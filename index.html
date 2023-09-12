@@ -20,8 +20,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <link rel="stylesheet" href="styleit.css" />
     <script
@@ -55,11 +54,12 @@
     </header>
     <section class="main-home">
       <div class="main-text">
-        <h4>Koris Aviation & Consultancy Ltd</h4>
+        <h3>Koris Aviation & Consultancy Ltd</h3>
         <h1>Advanced Drone services</h1>
-        <button type="button" class="rounded-pill">
-          Learn more <i class='bx bx-down-arrow-alt' ></i>
-        </button>
+        <a href="#info">
+          <button type="button" class="rounded-pill">
+            Learn more <i class="bx bx-down-arrow-alt"></i></button
+        ></a>
       </div>
       <div class="main-image">
         <img
@@ -74,17 +74,12 @@
         />
       </div>
     </section>
-<<<<<<< HEAD
-    <div class="container-fluid">
+    <div class="container-fluid" id="info">
       <div class="row slider">
-        <div class="col-md-6 slider-image ">
-          <img
-            src="./images/building2.jpg"
-            alt="img"
-            class="shadow"/>
-          
+        <div class="col-md-6 slider-image">
+          <img src="./images/building2.jpg" alt="img" class="shadow" />
         </div>
-        <div class="col-md-6 slider-text"> 
+        <div class="col-md-6 slider-text">
           <h1>WHAT WE DO</h1>
           <div id="div"></div>
           <h2>CONSTRUCTION/REAL ESTATE SOLUTION</h2>
@@ -95,17 +90,15 @@
             specialized services help you save time, reduce cost, improve safety
             and communication.
           </p>
-          <button>
-            Learn more<box-icon type="solid" name="right-arrow-alt"></box-icon>
-          </button>
+          <button>Learn more<i class="bx bxs-right-arrow-alt"></i></button>
         </div>
-      </div>  
+      </div>
 
       <div class="row slider">
-        <div class="col-md-6 slider-text"> 
+        <div class="col-md-6 slider-text">
           <h1>WHAT WE DO</h1>
           <div id="div"></div>
-         <h2>INSPECTION OF CRITICAL <br />INFRASTRUCTURE</h2>
+          <h2>INSPECTION OF CRITICAL <br />INFRASTRUCTURE</h2>
           <p>
             Our services include inspections of crititical infrastrucres, such
             as oil and gas popelines, telecome towers, powerlines etc. These
@@ -113,48 +106,57 @@
             regulations as well as in inspections following disasters in which
             the status of existing infrasture is unknown.
           </p>
-          <button>
-            Learn more<box-icon type="solid" name="right-arrow-alt"></box-icon>
-          </button>
-        </div> 
-        <div class="col-md-6 slider-image ">
-          <img
-            src="civil enginer.webp"
-            alt="img"
-            class="shadow"/>
+          <button>Learn more<i class="bx bxs-right-arrow-alt"></i></button>
+        </div>
+        <div class="col-md-6 slider-image">
+          <img src="civil enginer.webp" alt="img" class="shadow" />
         </div>
       </div>
 
-            <div class="row slider">
-        <div class="col-md-6 slider-image ">
+      <div class="row slider">
+        <div class="col-md-6 slider-image">
           <img
             src="./images/computer img2.jpg"
-            alt="img"  height="100px"
-            class="shadow">
-          
+            alt="img"
+            height="100px"
+            class="shadow"
+          />
         </div>
-        <div class="col-md-6 slider-text"> 
-          
+        <div class="col-md-6 slider-text">
           <div id="div"></div>
-          <h2>AVIATION CONSULTANCY <br>SERVICES</h2>
+          <h2>AVIATION CONSULTANCY <br />SERVICES</h2>
           <p>
-            We provide objective technical, financial and 
-            commercial guidance to aviation clients to 
-            navigate the complex and evolving aviation and 
-            earospace industry. Koris works with clients to 
-            help identify the opportunities/risks, new stategy, 
-            documantations and perfomance targets that can 
-            be easily followed and implemented.
-         
+            We provide objective technical, financial and commercial guidance to
+            aviation clients to navigate the complex and evolving aviation and
+            earospace industry. Koris works with clients to help identify the
+            opportunities/risks, new stategy, documantations and perfomance
+            targets that can be easily followed and implemented.
           </p>
-          <button>
-            Learn more<box-icon type="solid" name="right-arrow-alt"></box-icon>
-          </button>
+          <button>Learn more<i class="bx bxs-right-arrow-alt"></i></button>
         </div>
-      </div>  
       </div>
-=======
+    </div>
+    <div class="update-construction">
+      <div class="construction">
+        <img src="images/building construction.jpg" alt="" />
+        <h4>monitoring of land & coastal area</h4>
+      </div>
 
+      <div class="construction">
+        <img src="images/building2.jpg" alt="" />
+        <h4>Let's Start bring sale on this summer vacation.</h4>
+      </div>
+
+      <div class="construction">
+        <img src="images/civil enginers.jpg" alt="" />
+        <h4>inspection of critical infrastructure</h4>
+      </div>
+
+      <div class="construction">
+        <img src="images/computer img.jpg" alt="" />
+        <h4>oil & gas infrastructure</h4>
+      </div>
+    </div>
     <script>
       window.addEventListener("scroll", function () {
         const header = document.querySelector(".sticky-header");
@@ -163,7 +165,6 @@
         if (window.scrollY > 0) {
           header.style.backgroundColor = "#f1f1f1";
           header.style.boxShadow = "0px 0px 10px rgba(0, 0, 0, 0.1)";
->>>>>>> a4499a5435e7f037ce6ada8d0dde6e163f8ab20a
 
           links.forEach(function (link) {
             link.style.color = "black";
