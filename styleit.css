@@ -180,7 +180,7 @@ nav a:hover {
   border-radius: 50px;
   padding: 15px;
   color: #f1f1f1;
-  background-color: darkblue;
+  background-color: rgb(12, 42, 112);
   font-size: 1.1em;
   font-weight: 700;
 }
@@ -261,13 +261,13 @@ nav a:hover {
     margin-top: 50px;
     z-index: 1;
   }
- nav {
-  margin-right: 0px;
- }
+  nav {
+    margin-right: 0px;
+  }
   .main-image .top-image {
     display: none;
   }
-  .sticky-header{
+  .sticky-header {
     padding: 10px 10px 15px 20px;
   }
 }
@@ -278,9 +278,9 @@ nav a:hover {
     margin-top: 50px;
     z-index: 1;
   }
- nav {
- transform: scale(0);
- }
+  nav {
+    transform: scale(0);
+  }
   .main-image .top-image {
     display: none;
   }
@@ -290,10 +290,67 @@ nav a:hover {
 }
 @media only screen and (max-width: 740px) {
   .slider-text {
-  padding-top: 30px;
-  padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .slider {
+    padding: 5px;
+  }
 }
-.slider {
-  padding: 5px;
+
+.center {
+  background-color: lightblue;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.center-2 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 50%;
+}
+
+.linear {
+  height: 5px;
+  background-image: linear-gradient(
+    to right,
+    white,
+    rgb(230, 230, 221),
+    rgb(95, 72, 72),
+    rgb(100, 90, 90)
+  );
+  width: 50%;
+  border-radius: 20px;
+  display: flex;
+}
+.center h1 {
+  color: white;
+  font-size: 3em;
+}
+.center p {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.center button {
+  background-color: #010126;
+  color: white;
+  width: 30%;
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.linear-2 {
+  height: 5px;
+  background-image: linear-gradient(to right, yellow, red, black);
+  width: 80%;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
