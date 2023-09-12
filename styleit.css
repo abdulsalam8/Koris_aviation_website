@@ -132,7 +132,6 @@ nav a:hover::after {
 .main-image .bottom-image {
   width: 100%;
   height: auto;
-<<<<<<< HEAD
   padding-top: 70px;
 } 
 .slider {
@@ -169,7 +168,7 @@ nav a:hover::after {
   border-radius: 50px;
   padding: 15px;
   color: #f1f1f1;
-  background-color: darkblue;
+  background-color: rgb(12, 42, 112);
   font-size: 1.1em;
   font-weight: 700;
 }
@@ -181,7 +180,60 @@ width: 50%;
 border-radius: 5px;
 margin-bottom: 0.8em;
 }
-=======
-  margin-top: 5px;
+
+ .center{ 
+  background-color: lightblue; 
+  padding: 50px;
+display: flex; 
+justify-content: center; 
+align-items: center;
+}  
+.center-2{ 
+margin-top: 5rem; 
+margin-bottom: 5rem;
+width: 50%;  
+} 
+
+.linear{
+  height: 5px;
+    background-image: linear-gradient(to right, white, rgb(230, 230, 221), rgb(95, 72, 72), 
+     rgb(100, 90, 90));
+    width: 50%; 
+    border-radius: 20px; 
+    display: flex; 
+    
+} 
+.center h1{
+color: white; 
+font-size: 3em; 
+
 }
->>>>>>> a4499a5435e7f037ce6ada8d0dde6e163f8ab20a
+.center p{
+color: white; 
+font-size: 1.2em; 
+font-weight: 700;  
+
+} 
+.center button{
+background-color: #010126; 
+color: white;
+width: 30%; 
+border: none;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: 700; 
+  margin-top: 20px;
+} 
+
+.linear-2{
+height: 5px;
+  background-image: linear-gradient(to right, yellow, red, black);
+  width: 80%;
+  border-radius: 5px;
+  margin-bottom: 2rem; 
+  margin-top: 2rem;  
+  margin-left: 2rem;
+ 
+} 
+
