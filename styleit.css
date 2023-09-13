@@ -114,6 +114,7 @@ nav a:hover {
   transition: all 0.3s;
   background-color: rgb(12, 42, 112);
 }
+
 .main-home button i {
   font-size: 1.2em;
   vertical-align: middle;
@@ -122,6 +123,7 @@ nav a:hover {
 .main-home button:hover {
   background-color: #010126;
 }
+
 .main-home button:active {
   box-shadow: 0 5px #666;
   transform: translateY(5px);
@@ -144,29 +146,35 @@ nav a:hover {
   bottom: 0;
   right: 0;
 }
+
 /* slider-section-css */
 .slider {
   padding: 50px;
 }
+
 .slider-image img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-top-right-radius: 50px;
 }
+
 .slider-text {
   padding-top: 30px;
   padding-left: 40px;
 }
+
 .slider-text h1 {
   font-size: 2em;
   font-weight: 700;
   margin-bottom: 0.5em;
 }
+
 .slider-text h2 {
   font-size: 1.8em;
   font-weight: 700;
 }
+
 .slider-text p {
   font-size: 1.3em;
   font-weight: 400;
@@ -174,6 +182,7 @@ nav a:hover {
   max-width: 500px;
   line-height: 1.5;
 }
+
 .slider-text button {
   width: 150px;
   border: none;
@@ -184,11 +193,13 @@ nav a:hover {
   font-size: 1.1em;
   font-weight: 700;
 }
+
 .slider-text button i {
   font-size: 1.1em;
   font-weight: 700;
   vertical-align: middle;
 }
+
 #div {
   height: 5px;
   background-image: linear-gradient(to right, yellow, red, black);
@@ -196,6 +207,7 @@ nav a:hover {
   border-radius: 5px;
   margin-bottom: 0.8em;
 }
+
 /* update-construction-section-css */
 
 .construction img {
@@ -204,6 +216,7 @@ nav a:hover {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .update-construction {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, auto));
@@ -219,10 +232,11 @@ nav a:hover {
   font-weight: 600;
   font-style: italic;
 }
+
 /* center-text-style */
-.center {
+.con{
   background-color: lightblue;
-  padding: 50px;
+  padding: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,37 +244,42 @@ nav a:hover {
 }
 
 .linear {
-  height: 5px;
-  background-image: linear-gradient(
-    to right,
-    white,
+  height: 4px;
+  background-image: linear-gradient(to right,white,
     rgb(230, 230, 221),
     rgb(95, 72, 72),
-    rgb(100, 90, 90)
-  );
-  width: 50%;
-  border-radius: 20px;
-  display: flex;
+    lightblue
+    );
+     
+  width: 30%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
+
 .center h1 {
   color: white;
   font-size: 3em;
   font-style: italic;
 }
+
 .center p {
   color: white;
   font-size: 1.2em;
-  font-weight: 700;
+  font-weight: 700; 
+  max-width: 450px;
+  margin-left: 10px;
+  opacity: 0.5;
 }
+
 .center button {
   background-color: #f1f1f1;
-  color: rgb(12, 42, 112);
+  color: rgb(0, 9, 31);
   width: 30%;
   border: none;
   border-radius: 50px;
   padding: 15px;
   font-size: 1.1em;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 20px;
   font-style: italic;
 }
@@ -268,15 +287,15 @@ nav a:hover {
 .second-linear {
   height: 5px;
   background-image: linear-gradient(to right, yellow, red, black);
+  width: 80%;
   border-radius: 5px;
-  margin: 10px ;
-  width: 200px;
-}
-.second-center h4 {
-  margin: 10px;
-  text-align: center;
-  max-width: 300px;
-}
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+} 
+
+
+
 /* responsive-css */
 @media only screen and (max-width: 1100px) {
   .main-text {
@@ -284,6 +303,7 @@ nav a:hover {
     max-width: 600px;
     z-index: 1;
   }
+
   .main-text h3 {
     color: #2c2c2c;
     font-size: 1.9rem;
@@ -302,16 +322,19 @@ nav a:hover {
     transition: all 0.4s ease;
   }
 }
+
 @media only screen and (max-width: 989px) {
   .main-text {
     text-align: left;
     max-width: 500px;
     z-index: 1;
   }
+
   .sticky-header {
     padding: 15px 20px 15px 50px;
   }
 }
+
 @media only screen and (max-width: 889px) {
   .main-text {
     text-align: left;
@@ -331,10 +354,12 @@ nav a:hover {
   .main-image .top-image {
     display: none;
   }
+
   .sticky-header {
     padding: 10px 10px 15px 20px;
   }
 }
+
 @media only screen and (max-width: 740px) {
   .main-text {
     text-align: left;
@@ -346,41 +371,83 @@ nav a:hover {
   nav {
     transform: scale(0);
   }
+
+  nav {
+    transform: scale(0);
+  }
+
   .main-image .top-image {
     display: none;
   }
+
   .main-image .bottom-image {
     display: none;
   }
 }
 @media only screen and (max-width: 540px) {
   .slider-text {
-    padding-top: 30px;
-    padding-bottom: 10px;
-  }
-  .slider {
-    padding: 5px;
-  }
-  .main-home {
-    width: 100%;
-    height: 80vh;
-    background-image: url(images/grass-field\ copy.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    padding: 0 40px;
-    margin-bottom: 100px;
-  }
-  .center button {
-    background-color: #010126;
-    color: white;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 0.5em;
-    font-weight: 700;
-    margin-top: 0px;
-  }
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
+.slider {
+  padding: 5px;
+}
+}
+
+ .center{ 
+  background-color: lightblue; 
+  padding: 50px;
+display: flex; 
+justify-content: center; 
+align-items: center;
+}  
+.center-2{ 
+margin-top: 5rem; 
+margin-bottom: 5rem;
+width: 50%;  
+} 
+
+.linear{
+  height: 5px;
+    background-image: linear-gradient(to right, white, rgb(230, 230, 221), rgb(95, 72, 72), 
+     rgb(100, 90, 90));
+    width: 50%; 
+    border-radius: 20px; 
+    display: flex; 
+    
+} 
+.center h1{
+color: white; 
+font-size: 3em; 
+
+}
+.center p{
+color: white; 
+font-size: 1.2em; 
+font-weight: 700;  
+
+} 
+.center button{
+background-color: #010126; 
+color: white;
+width: 30%; 
+border: none;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: 700; 
+  margin-top: 20px;
+} 
+
+.linear-2{
+height: 5px;
+  background-image: linear-gradient(to right, yellow, red, black);
+  width: 80%;
+  border-radius: 5px;
+  margin-bottom: 2rem; 
+  margin-top: 2rem;  
+  margin-left: 2rem;
+ 
+} 
+
+>>>>>>>>> Temporary merge branch 2
