@@ -253,8 +253,8 @@ nav a:hover {
   font-weight: 700;
 }
 .center button {
-  background-color: #010126;
-  color: white;
+  background-color: #f1f1f1;
+  color: rgb(12, 42, 112);
   width: 30%;
   border: none;
   border-radius: 50px;
@@ -262,9 +262,10 @@ nav a:hover {
   font-size: 1.1em;
   font-weight: 700;
   margin-top: 20px;
+  font-style: italic;
 }
 
-.linear-2 {
+.second-linear {
   height: 5px;
   background-image: linear-gradient(to right, yellow, red, black);
   width: 80%;
