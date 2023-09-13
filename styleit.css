@@ -68,3 +68,353 @@ nav a:hover::after {
 nav a:hover {
   color: #f1f1f1;
 }
+/* home-section-css */
+.main-home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/grass-field\ copy.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  margin-bottom: 100px;
+}
+
+.main-text {
+  text-align: left;
+  max-width: 700px;
+  z-index: 1;
+}
+
+.main-text h3 {
+  color: #2c2c2c;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main-text h1 {
+  color: #000;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.main-home button {
+  width: 200px;
+  border: none;
+  color: #f1f1f1;
+  font-weight: 700;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: rgb(12, 42, 112);
+}
+
+.main-home button i {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+.main-home button:hover {
+  background-color: #010126;
+}
+
+.main-home button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(5px);
+}
+
+.main-image .top-image {
+  width: 150px;
+  height: auto;
+  opacity: 0.8;
+  position: absolute;
+  top: 22px;
+  right: 30px;
+}
+
+.main-image .bottom-image {
+  width: 400px;
+  height: auto;
+  padding-top: 70px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* slider-section-css */
+.slider {
+  padding: 50px;
+}
+
+.slider-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-right-radius: 50px;
+}
+
+.slider-text {
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+.slider-text h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.slider-text h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.slider-text p {
+  font-size: 1.3em;
+  font-weight: 400;
+  opacity: 0.8;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.slider-text button {
+  width: 150px;
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  color: #f1f1f1;
+  background-color: rgb(12, 42, 112);
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.slider-text button i {
+  font-size: 1.1em;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+#div {
+  height: 5px;
+  background-image: linear-gradient(to right, yellow, red, black);
+  width: 50%;
+  border-radius: 5px;
+  margin-bottom: 0.8em;
+}
+
+/* update-construction-section-css */
+
+.construction img {
+  width: 280px;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.update-construction {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+  gap: 0.3rem;
+  padding: 0 50px;
+}
+
+.construction h4 {
+  /* text-align: center; */
+  max-width: 260px;
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* center-text-style */
+.con{
+  background-color: lightblue;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50, -50);
+}
+
+.linear {
+  height: 4px;
+  background-image: linear-gradient(to right,white,
+    rgb(230, 230, 221),
+    rgb(95, 72, 72),
+    lightblue
+    );
+     
+  width: 30%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.center h1 {
+  color: white;
+  font-size: 3em;
+  font-style: italic;
+}
+
+.center p {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700; 
+  max-width: 450px;
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+.center button {
+  background-color: #f1f1f1;
+  color: rgb(0, 9, 31);
+  width: 30%;
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.second-linear {
+  height: 5px;
+  background-image: linear-gradient(to right, yellow, red, black);
+  width: 80%;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+} 
+
+
+
+/* responsive-css */
+@media only screen and (max-width: 1100px) {
+  .main-text {
+    text-align: left;
+    max-width: 600px;
+    z-index: 1;
+  }
+
+  .main-text h3 {
+    color: #2c2c2c;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: all 0.4s ease;
+  }
+
+  .main-text h1 {
+    color: #000;
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 20px;
+    transition: all 0.4s ease;
+  }
+}
+
+@media only screen and (max-width: 989px) {
+  .main-text {
+    text-align: left;
+    max-width: 500px;
+    z-index: 1;
+  }
+
+  .sticky-header {
+    padding: 15px 20px 15px 50px;
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  .main-text {
+    text-align: left;
+    max-width: 400px;
+    margin-top: 50px;
+    z-index: 1;
+  }
+
+  .slider-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 50px;
+  }
+
+  nav {
+    margin-right: 0px;
+  }
+
+  .main-image .top-image {
+    display: none;
+  }
+
+  .sticky-header {
+    padding: 10px 10px 15px 20px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .main-text {
+    text-align: left;
+    max-width: 1000px;
+    margin-top: 50px;
+    z-index: 1;
+  }
+
+  nav {
+    transform: scale(0);
+  }
+
+  .main-image .top-image {
+    display: none;
+  }
+
+  .main-image .bottom-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .slider-text {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .slider {
+    padding: 5px;
+  }
+
+  .main-home {
+    width: 100%;
+    height: 80vh;
+    background-image: url(images/grass-field\ copy.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    margin-bottom: 100px;
+  }
+
+  .center button {
+    background-color: #010126;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.5em;
+    font-weight: 700;
+    margin-top: 0px;
+  }
+}
