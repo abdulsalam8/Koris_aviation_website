@@ -15,7 +15,7 @@
   width: 100%;
   transition: background-color 0.3s ease-in-out;
   z-index: 1000;
-  padding: 15px 50px 15px 50px;
+  padding: 5px 50px;
 }
 
 .header-content {
@@ -96,29 +96,31 @@
 
 .main-text {
   text-align: left;
-  max-width: 700px;
+  max-width: 600px;
   z-index: 1;
-  margin-top: 50px;
+  margin-top: 130px;
   color: var(--text-color);
-  transform: scale(0);
+  /* transform: scale(1); */
 }
 
 .main-text h3 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 4.5rem;
+  /* text-transform: uppercase; */
+  font-weight: 500;
+  /* margin-bottom: 3px; */
+  line-height: .9;
   color: #2c2c2c;
-  transform: scale(0);
+  /* transform: scale(0); */
 }
 
 .main-text h1 {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 800;
+  line-height: .9;
+  font-size: 4.5rem;
+  /* text-transform: uppercase; */
+  font-weight: 700;
   margin-bottom: 20px;
   color: #000;
-  transform: scale(0);
+  /* transform: scale(0); */
 }
 
 .main-home button {
@@ -133,7 +135,7 @@
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   background-color: var(--primary-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  transform: scale(0);
+  /* transform: scale(0); */
 }
 
 .main-home button i {
@@ -141,11 +143,11 @@
   vertical-align: middle;
 }
 
-.main-home button:hover {
+/* .main-home button:hover {
   background-color: #0056b3;
   transform: translateY(-2px);
   box-shadow: 0 5px #003c80;
-}
+} */
 
 .main-home button:active {
   box-shadow: 0 2px #003c80;
@@ -164,9 +166,10 @@
 }
 
 .main-image .bottom-image {
-  width: 100%;
-  height: 698px;
-  object-fit: cover;
+  width: 550px;
+  height: auto;
+  object-fit: contain;
+  /* object-fit: cover; */
   padding-top: 70px;
   position: absolute;
   bottom: 0;
@@ -189,10 +192,8 @@
   margin-bottom: 0.8em;
 }
 .slider-image img {
-  width: 100%;
-  height: auto;
   border-top-right-radius: 10px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .slider-text {
@@ -236,11 +237,11 @@
 .slider-text button i {
   vertical-align: middle;
 }
-.slider-text button:hover {
+/* .slider-text button:hover {
   background-color: #0056b3;
   transform: translateY(-2px);
   box-shadow: 0 5px #003c80;
-}
+} */
 
 .slider-text button:active {
   box-shadow: 0 2px #003c80;
@@ -339,11 +340,11 @@
   transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
 }
 
-.center button:hover {
-  /* background-color: #0056b3;
+/* .center button:hover {
+  background-color: #0056b3;
   transform: translateY(-2px);
-  box-shadow: 0 5px #003c80; */
-}
+  box-shadow: 0 5px #003c80;
+} */
 .center button:active {
   transform: translateY(3px);
   box-shadow: 0 2px #003c80;
@@ -441,6 +442,8 @@
   border-radius: 50px;
   padding: 15px 25px;
   font-size: 1.2em;
+  width: 50%;
+  margin-left: 200px;
   font-weight: 700;
   font-style: italic;
   transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
@@ -583,7 +586,7 @@ font-weight: 700;}
   .main-home {
     width: 100%;
     height: 80vh;
-    background-image: url(images/image0\ \(1\).png);
+    background-image: url(images/bg.BMP);
     background-position: center;
     background-size: cover;
     display: flex;
