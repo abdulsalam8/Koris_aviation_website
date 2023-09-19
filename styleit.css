@@ -100,7 +100,7 @@
   z-index: 1;
   margin-top: 50px;
   color: var(--text-color);
-  transform: scale(0);
+  /* transform: scale(0); */
 }
 
 .main-text h3 {
@@ -109,7 +109,7 @@
   font-weight: 600;
   margin-bottom: 10px;
   color: #2c2c2c;
-  transform: scale(0);
+  /* transform: scale(0); */
 }
 
 .main-text h1 {
@@ -118,7 +118,7 @@
   font-weight: 800;
   margin-bottom: 20px;
   color: #000;
-  transform: scale(0);
+  /* transform: scale(0); */
 }
 
 .main-home button {
@@ -133,7 +133,7 @@
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   background-color: var(--primary-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  transform: scale(0);
+  /* transform: scale(0); */
 }
 
 .main-home button i {
