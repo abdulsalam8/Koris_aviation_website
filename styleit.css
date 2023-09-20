@@ -43,7 +43,7 @@
 
 .navlist a {
   text-decoration: none;
-  color: #f1f1f1;
+  color: var(--primary-color);
   font-weight: bold;
   position: relative;
   font-size: 1.1em;
@@ -66,7 +66,7 @@
   transform-origin: left;
 }
 .navlist a:hover {
-  color: #f1f1f1;
+  color: var(--primary-color);
 }
 #menu-icon {
   color: #222;
@@ -186,7 +186,7 @@
 }
 #div {
   height: 5px;
-  background-image: linear-gradient(to right, yellow, red, black);
+  background-image: linear-gradient(to right, var(--button-color), #01346B, var(--primary-color));
   width: 50%;
   border-radius: 5px;
   margin-bottom: 0.8em;
@@ -258,7 +258,7 @@
   margin-top: 40px;
 }
 .construction {
-  background-color: var(--button-color);
+  background-color: #01346B;
   border: 1px solid var(--text-color);
   border-radius: 10px;
   text-align: center;
@@ -281,7 +281,7 @@
 
 .construction h4 {
   margin-top: 20px;
-  color: #333;
+  color: var(--text-color);
   font-size: 20px;
   font-weight: 700;
   font-style: normal;
@@ -340,11 +340,6 @@
   transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
 }
 
-/* .center button:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
-  box-shadow: 0 5px #003c80;
-} */
 .center button:active {
   transform: translateY(3px);
   box-shadow: 0 2px #003c80;
@@ -375,42 +370,40 @@
   padding: 50px 50px;
   background-color: #f0f0f0;
 }
-.review,
-.review-2 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+
+.review {
   margin-top: 20px;
   padding: 20px;
   background-color: var(--button-color);
-  color: var(--primary-color);
+  color: var(--primary-color); 
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: auto; 
+  transition: transform 0.2s;
 }
 
-.review img,
-.review-2 img {
-  object-fit: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 15px;
+.review:hover {
+  transform: translateY(-5px);
 }
 
-.review p,
-.review-2 p {
-  font-size: 1.2rem;
-  font-weight: 600;
-  font-style: italic;
+.review h4 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.review p {
+  font-size: 1.1rem; 
+  font-weight: 400; 
+  font-style: normal;
   margin: 0;
 }
 
-.review p span,
-.review-2 p span {
-  opacity: 0.5;
-  font-style: normal;
-  font-weight: 700;
+.review p span {
+  opacity: 0.7; 
+  font-weight: 600; 
+  font-style: italic; 
 }
+
 
 /* Style for the "end" section */
 .end {
@@ -514,6 +507,11 @@ font-weight: 700;}
     max-width: 600px;
     z-index: 1;
   }
+   .koris button {
+    margin-left: 0;
+    width: 80%;
+    padding: 15px 10px;
+  }
   .navlist {
     margin-right: 0px;
   }
@@ -563,6 +561,11 @@ font-weight: 700;}
     height: 100%;
     object-fit: cover;
     border-top-right-radius: 50px;
+  }
+  .koris button {
+    margin-left: 0;
+    width: 80%;
+    padding: 15px 10px;
   }
   .navlist {
     margin-right: 0px;
@@ -623,6 +626,11 @@ font-weight: 700;}
   .slider-2-img {
     margin-bottom: 15px;
   }
+   .koris button {
+    margin-left: 0;
+    width: 80%;
+    padding: 15px 10px;
+  }
   .navlist ul {
     position: absolute;
     width: 50%;
@@ -632,7 +640,7 @@ font-weight: 700;}
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: rgb(0, 136, 255);
+    background-color: var(--button-color);
     transition: all 0.42s;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -679,6 +687,11 @@ font-weight: 700;}
     padding-bottom: 10px;
     padding-left: 5px;
   }
+  .koris button {
+    margin-left: 0;
+    width: 75%;
+  }
+  
   .slider {
     padding: 5px;
   }
@@ -691,7 +704,7 @@ font-weight: 700;}
   display: flex;
   align-items: center;
   padding: 0 40px;
-  margin-bottom: 100px;
+  margin: 0 0 100px 0;
 }
   .main-text {
     text-align: left;
@@ -749,17 +762,7 @@ font-weight: 700;}
   .center {
     padding: 70px 20px;
   }
-  .center button {
-    background-color: #010126;
-    color: white;
-    width: 260px;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 0.5em;
-    font-weight: 700;
-    margin-top: 10px;
-  }
+
   .second-center {
     padding: 20px;
   }
