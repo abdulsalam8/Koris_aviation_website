@@ -175,26 +175,7 @@
   right: 0;
   /* transform: scale(0); */
 }
-.custom-shape-divider-bottom-1695211343 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
 
-.custom-shape-divider-bottom-1695211343 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
-}
-
-.custom-shape-divider-bottom-1695211343 .shape-fill {
-  fill: rgb(133, 246, 113);
-}
 /* slider-section-css */
 .slider {
   /* height: 400px;  */
