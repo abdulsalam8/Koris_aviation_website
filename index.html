@@ -21,7 +21,8 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
+    <script src="aos/aos.js"></script>
+    <link href="aos/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styleit.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -41,7 +42,7 @@
             class="logo"
         /></a>
 
-        <nav class="navlist">
+        <nav class=navlist>
           <ul>
             <li><a href="#about">About us</a></li>
             <li><a href="#partners">Our partners</a></li>
@@ -129,7 +130,6 @@
           <button>Learn more<i class="bx bxs-right-arrow-alt"></i></button>
         </div>
       </div>
-
       <div class="row slider">
         <div class="col-md-6 slider-text">
           <h1>WHAT WE DO</h1>
@@ -148,13 +148,13 @@
           <img
             src="./images/Inspections of critical infrastructure.jpg"
             alt="img"
-            class="shadow"
             width="100%"
             height="70%"
+            class="shadow"
+            style="object-fit: fill; margin-bottom: 0"
           />
         </div>
       </div>
-
       <div class="row slider">
         <div class="col-md-6 slider-image">
           <img
@@ -237,73 +237,104 @@
     </div>
 
     <!-- review-section -->
-    <div class="container-fluid" id="event">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="review">
-            <h4>
-              Koris Aviation & Consultancy Services Ltd is one of the Indigenous
-              RPAS Operator Certificate holder in Nigeria, who obtained both EUC
-              and ROC in June 2020 and has demonstrated and lived up to the
-              standard of maintaining safety in operations as well as developed
-              human capacity. They have just been issued a renewed ROC to enable
-              Koris Aviation continue operation, having demonstrated a mandatory
-              standard five phase certification process. The Nigerian aviation
-              apex body has rated Koris Aviation & Consultancy Ltd as one of the
-              leading RPAS/UAV operators in Nigeria.
-            </h4>
-            <p>
-              Omaga Joshua A.
-              <br />
-              <span>NCAA RPAS Safety Officer/ONSA Desk Officer</span>
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="review">
-            <h4>
-              Koris Aviation & Consultancy Ltd has provided instrumental
-              solutions for project documentation and site assessments through
-              their drone services. They have been utilized heavily in the
-              planning stages of our Design-Build Projects and throughout the
-              project – specifically weekly updates to the owner. “Very
-              professional. Very detailed and timely with service delivery. I
-              would highly recommend.”
-            </h4>
-            <p style="margin-top: 100px">
-              Arc. Ibrahim Halil Jibrin
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
 
-              <br />
-              <span>M.D Concept Cast and Constructions Ltd</span>
-            </p>
-          </div>
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>
+            Omaga Joshua A.
+            <br />
+            <span>NCAA RPAS Safety Officer/ONSA Desk Officer</span>
+          </h2>
+          <p>
+            Koris Aviation & Consultancy Services Ltd is one of the Indigenous
+            RPAS Operator Certificate holder in Nigeria, who obtained both EUC
+            and ROC in June 2020 and has demonstrated and lived up to the
+            standard of maintaining safety in operations as well as developed
+            human capacity. They have just been issued a renewed ROC to enable
+            Koris Aviation continue operation, having demonstrated a mandatory
+            standard five phase certification process. The Nigerian aviation
+            apex body has rated Koris Aviation & Consultancy Ltd as one of the
+            leading RPAS/UAV operators in Nigeria.
+          </p>
         </div>
-        <div class="col-md-4">
-          <div class="review">
-            <h4>
-              Koris Aviation & Consultancy Ltd is the Company of choice for all
-              drone services in Nigeria. Fully certificated and certified, with
-              trained and experienced human capacity, they are blazing the trail
-              in an array of drone services from pipelines and infrastructure
-              surveillance, construction industry and related services, telecoms
-              and security, name it, Koris is your best option. Tried and
-              tested, and in all instances, have delivered and surpassed all
-              expected results.
-            </h4>
-            <p style="margin-top: 40px">
-              Ibrahim Musa Mammadi
+        <div class="carousel-item">
+          <h2>
+            Arc. Ibrahim Halil Jibrin
 
-              <br />
-              <span
-                >Chairman/Managing Director, Malumty Construction and Properties
-                Limited.</span
-              >
-            </p>
-          </div>
+            <br />
+            <span>M.D Concept Cast and Constructions Ltd</span>
+          </h2>
+          <p>
+            Koris Aviation & Consultancy Ltd has provided instrumental solutions
+            for project documentation and site assessments through their drone
+            services. They have been utilized heavily in the planning stages of
+            our Design-Build Projects and throughout the project – specifically
+            weekly updates to the owner. “Very professional. Very detailed and
+            timely with service delivery. I would highly recommend.”
+          </p>
+        </div>
+        <div class="carousel-item">
+          <h2>
+            Ibrahim Musa Mammadi
+            <br />
+            <span
+              >Chairman/Managing Director, Malumty Construction and Properties
+              Limited.</span
+            >
+          </h2>
+          <p>
+            Koris Aviation & Consultancy Ltd is the Company of choice for all
+            drone services in Nigeria. Fully certificated and certified, with
+            trained and experienced human capacity, they are blazing the trail
+            in an array of drone services from pipelines and infrastructure
+            surveillance, construction industry and related services, telecoms
+            and security, name it, Koris is your best option. Tried and tested,
+            and in all instances, have delivered and surpassed all expected
+            results.
+          </p>
         </div>
       </div>
-    </div>
 
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
     <!-- end-section -->
     <div class="end">
       <div class="container">
@@ -361,7 +392,6 @@
         </div> -->
       </div>
     </div>
-
     <script>
       window.addEventListener("scroll", function () {
         //var for changing background color on-scroll
