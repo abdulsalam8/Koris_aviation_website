@@ -186,10 +186,6 @@
   padding: 30px;
 }
 
-.slider-text,
-.slider-image {
-  margin-bottom: 0px;
-}
 
 /* Additional styles for slider-text */
 .slider-text h1 {
@@ -221,7 +217,7 @@
 
 .slider-text h2 {
   font-size: 1.8em;
-  font-weight: 600;
+  font-weight: bold;
   color: var(--primary-color);
   font-family: "Hammersmith One", sans-serif;
 }
@@ -232,7 +228,7 @@
   opacity: 0.9;
   max-width: 500px;
   line-height: 1.6;
-  color: #666;
+  color: #000;
   font-family: "Poiret One", cursive;
 }
 
