@@ -314,7 +314,7 @@
   color: var(--text-color);
   font-size: 1.2em;
   font-weight: 700;
-  max-width: 450px;
+  max-width: 500px;
   opacity: 0.5;
   margin-bottom: 70px;
 }
@@ -362,12 +362,12 @@
   width: 180px;
   border-radius: 4px;
   transform: translateX(-50%);
-  background: url(img/heading-line.png);
+  /* background: url(img/heading-line.png); */
   background-repeat: no-repeat;
   background-position: center;
 }
 .white-heading:after {
-  background-image: url(images/header\ line.jpg);
+  /* background-image: url(images/header\ line.jpg); */
   background-repeat: no-repeat;
   background-position: center;
 }
