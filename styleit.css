@@ -550,7 +550,7 @@ ul {
 
 .main-footer{
   position: relative;
-  background: #1e2129;
+  background: var(--primary-color);
 }
 
 .footer-content{
@@ -606,7 +606,7 @@ ul {
   width: 42px;
   height: 42px;
   line-height: 42px;
-  background: #2e3138;
+  background: #13151a;
   color: #9ea0a9;
   text-align: center;
   border-radius: 50%;
