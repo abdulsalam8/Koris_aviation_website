@@ -162,9 +162,18 @@
 }
 
 /* slider-section-css */
+#partners {
+  background-color: rgb(215, 236, 254);
+}
+.heading h1 {
+  text-align: center;
+  color: #0056b3;
+  font-size: 2.6em;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+}
 .slider {
-  padding: 20px;
-  border-radius: 10px;
+  padding: 20px 100px;
 }
 #div {
   height: 5px;
@@ -174,74 +183,48 @@
   margin-bottom: 1.6em;
 }
 .slider-image img {
-  border-top-right-radius: 70px;
   width: 100%;
   height: auto;
-  box-shadow: 0 35px 35px rgb(167, 166, 166);
-}
-
-.slider-text {
-  padding-top: 30px;
   padding-left: 40px;
 }
 
-.slider-text h1 {
-  font-size: 1.8em;
-  font-weight: bolder;
-  margin-bottom: 2em;
-  color: #000;
-  margin-top: -2em;
+.slider-text {
+  padding-top: 20px;
+}
+.slider-text .image {
+  margin-bottom: 40px;
+  max-width: 100%;
+  cursor: pointer;
+}
+.slider-text .image-2 {
+  margin-top: 60px;
+  cursor: pointer;
+  margin-bottom: 40px;
+
 }
 
 .slider-text h2 {
-  font-size: 2.3em;
-  font-weight: 600;
-  color: #000;
-  margin-bottom: 1em;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #0e6ed6;
 }
 
 .slider-text p {
-  font-size: 1.2em;
-  font-weight: 700;
-  max-width: 400px;
-  line-height: 1.3;
-  color: #666;
-  margin-bottom: 2em;
-}
-
-.slider-text button {
-  width: 200px;
-  border: none;
-  border-top-right-radius: 20px;
-  padding: 20px 15px;
-  color: #fff;
-  background-color: rgb(2, 2, 56);
-  font-size: 1.1em;
-  font-style: italic;
+  font-size: 1.3em;
   font-weight: 500;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  color: black;
+  opacity: 0.7;
+  text-align: justify;
 }
-.slider-text button i {
-  vertical-align: middle;
-  margin-left: 25px;
+.line{
+  width: 100%;
+  height: 10px;
+  color: black;
 }
 
-.slider-text button:active {
-  box-shadow: 0 2px #003c80;
-  transform: translateY(3px);
-}
-.slider-2 {
-  margin-top: 100px;
-}
-.slider-2 .slider-text {
-  margin-top: 50px;
-}
-.slider-3 {
-  margin-top: 100px;
-}
-.slider-3 .slider-text {
-  margin-top: 50px;
-}
+
+
+
 /* update-construction-section-css */
 .update-construction {
   display: grid;
