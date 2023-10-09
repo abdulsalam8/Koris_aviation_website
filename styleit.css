@@ -163,13 +163,14 @@
 
 /* slider-section-css */
 #partners {
-  background-color: rgb(215, 236, 254);
+  background-color: #e1eaf4;
 }
 .heading h1 {
   text-align: center;
-  color: #0056b3;
-  font-size: 2.6em;
-  font-weight: 700;
+  color: rgb(5, 87, 188);
+  font-size: 500%;
+  font-weight: bold;
+  font-family: "arial black";
   margin-bottom: 1.2em;
 }
 .slider {
@@ -183,8 +184,9 @@
   margin-bottom: 1.6em;
 }
 .slider-image img {
-  width: 100%;
-  height: auto;
+  width: 500px;
+  height: 450px;
+  border-radius: 10px;
   padding-left: 40px;
 }
 
@@ -200,13 +202,12 @@
   margin-top: 60px;
   cursor: pointer;
   margin-bottom: 40px;
-
 }
 
 .slider-text h2 {
   font-size: 2.5em;
   font-weight: 700;
-  color: #0e6ed6;
+  color: rgb(39, 118, 212);
 }
 
 .slider-text p {
@@ -216,15 +217,87 @@
   opacity: 0.7;
   text-align: justify;
 }
-.line{
+.line {
   width: 100%;
   height: 10px;
   color: black;
 }
+/* partners-section */
+.partner {
+  background-color: rgb(231, 242, 250);
+  padding: 0 150px;
+}
+.partner .top {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(5, 87, 188);
+  font-size: 500%;
+  font-family: "arial black";
+}
+.partners-slide {
+  margin-top: 50px;
+}
+.partners-slide h1 {
+  color: rgb(39, 118, 212);
+  text-align: left;
+  font-weight: bold;
+}
+.partners-slide p {
+  text-align: justify; 
+  font-size: 20px
+}
+.partners-image img {
+  margin-left: 40px;
+  margin-top: 100px
+}
+.partners-slide img {
+  cursor: pointer; 
+  width: 400px;
+}
 
-
-
-
+.partners-slide .sch {
+  margin-top: 60px;
+  cursor: pointer;
+  width: 400px;
+}
+/* fleet-section */
+.fleet {
+  background-color: rgb(231, 242, 250);
+  padding: 0 150px;
+}
+.head {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(5, 87, 188);
+  font-size: 500%;
+  font-family: "arial black";
+  margin-top: 90px;
+}
+.fleeter h1 {
+  color: rgb(39, 118, 212);
+  text-align: left;
+  font-weight: bold;
+  margin-top: 100px;
+}
+.fleeter h1 svg {
+  margin-right: 5px;
+  color: #fff;
+  background-color: rgb(39, 118, 212);
+  padding: 5px;
+  border-radius: 20px;
+}
+.fleeter p {
+  font-size: 23px;
+}
+.fleeter button {
+  background-color: rgb(5, 87, 188);
+  border: 0px;
+}
+.fleeter-image img {
+  width: 500px;
+  height: 450px;
+  border-radius: 10px;
+}
 /* update-construction-section-css */
 .update-construction {
   display: grid;
@@ -707,6 +780,14 @@ ul {
     max-width: 600px;
     z-index: 1;
   }
+  .partner {
+  background-color: rgb(231, 242, 250);
+  padding: 0 100px;
+}
+  .fleet {
+  background-color: rgb(231, 242, 250);
+  padding: 0 100px;
+}
   .navlist {
     margin-right: 0px;
   }
@@ -735,6 +816,14 @@ ul {
     max-width: 500px;
     z-index: 1;
   }
+  .partner {
+  background-color: rgb(231, 242, 250);
+  padding: 0 80px;
+}
+  .fleet {
+  background-color: rgb(231, 242, 250);
+  padding: 0 80px;
+}
   .footer-content .contact-widget {
     margin-left: 1px;
   }
@@ -753,6 +842,14 @@ ul {
     margin-top: 50px;
     z-index: 1;
   }
+  .partner {
+  background-color: rgb(231, 242, 250);
+  padding: 0 50px;
+}
+  .fleet {
+  background-color: rgb(231, 242, 250);
+  padding: 0 50px;
+}
   .slider-image img {
     width: 100%;
     height: 100%;
@@ -815,6 +912,14 @@ ul {
     margin-top: 50px;
     z-index: 1;
   }
+.fleet {
+  background-color: rgb(231, 242, 250);
+  padding: 0 30px;
+}
+.partner {
+  background-color: rgb(231, 242, 250);
+  padding: 0 30px;
+}
   .slider .slider-image img {
     border-top-right-radius: 70px;
     width: 100%;
@@ -943,6 +1048,30 @@ ul {
   #menu-icon {
     display: block;
   }
+
+  .partner .top {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(5, 87, 188);
+  font-size: 200%;
+  font-family: "arial black";
+}
+.head {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(5, 87, 188);
+  font-size: 200%;
+  font-family: "arial black";
+  margin-top: 90px;
+}
+.partner {
+  background-color: rgb(231, 242, 250);
+  padding: 0 10px;
+}
+  .fleet {
+  background-color: rgb(231, 242, 250);
+  padding: 0 10px;
+}
   .slider .slider-image img {
     border-top-right-radius: 70px;
     width: 100%;
@@ -1108,4 +1237,8 @@ ul {
   .footer-content .contact-widget {
     margin-left: 1px;
   }
+  .partners-image img {
+  margin-left: 0px;
+  margin-top: 100px
+}
 }
