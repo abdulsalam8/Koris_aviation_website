@@ -100,6 +100,9 @@
   z-index: 1;
   margin-top: 130px;
   color: var(--text-color);
+  /* transform: scale(0); */
+
+  /* transform: scale(1); */
 }
 
 .main-text h3 {
@@ -163,31 +166,39 @@
 
 /* partners-section */
 .partner {
-  background-color: rgb(231, 242, 250);
-  padding: 0 150px;
-}
+  /* background-color: rgb(231, 242, 250); */
+  padding: 0 80px;
+} 
 .partner .top {
-  text-align: center;
+  /* text-align: center;
   font-weight: bold;
-  color: #000000;
-  font-size: 200%;
+  color: rgb(5, 87, 188);
+  font-size: 500%;
   font-family: "arial black";
 }
 .partners-slide {
-  margin-top: 50px;
+  /* margin-top: 50px; */ 
+  
 }
 .partners-slide h1 {
-  color: rgb(39, 118, 212);
   text-align: left;
-  font-weight: bold;
+  font-weight: bold; 
+  font-weight: 800;
+  color: #000; 
 }
 .partners-slide p {
   text-align: justify;
-  font-size: 20px;
+  font-size: 20px;   
+  font-weight: 800;
+  color: #6666;
+  max-width: 600px;
+
 }
 .partners-image img {
   margin-left: 40px;
   margin-top: 100px;
+  box-shadow: 0 35px 35px rgb(167, 166, 166);
+  /* margin-bottom: 40px; */
 }
 .partners-slide img {
   cursor: pointer;
@@ -195,25 +206,28 @@
 }
 
 .partners-slide .sch {
-  margin-top: 60px;
+  margin-top: 50px;
   cursor: pointer;
-  width: 400px;
-}
+  width: 80%;
+  height: auto;
+  margin-left: 0;
+} 
+
 /* fleet-section */
 .fleet {
-  background-color: rgb(231, 242, 250);
-  padding: 0 150px;
+  /* background-color: rgb(231, 242, 250); */
+  padding: 0 80px;
 }
 .head {
   text-align: center;
   font-weight: bold;
-  color: rgb(5, 87, 188);
-  font-size: 500%;
+  color: #000;
+  font-size: 200%;
   font-family: "arial black";
   margin-top: 90px;
 }
 .fleeter h1 {
-  color: rgb(39, 118, 212);
+color: #000;
   text-align: left;
   font-weight: bold;
   margin-top: 100px;
@@ -221,16 +235,35 @@
 .fleeter h1 svg {
   margin-right: 5px;
   color: #fff;
-  background-color: rgb(39, 118, 212);
+background-color: rgb(2, 2, 56);
   padding: 5px;
   border-radius: 20px;
 }
 .fleeter p {
-  font-size: 23px;
+  font-size: 23px; 
+  color: #666; 
+  font-weight: 700;
 }
 .fleeter button {
-  background-color: rgb(5, 87, 188);
-  border: 0px;
+  width: 200px;
+    border: none;
+    border-top-right-radius: 20px;
+    padding: 20px 15px;
+    color: #fff;
+    background-color: rgb(2, 2, 56);
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.fleeter button i {
+  vertical-align: middle;
+  margin-left: 25px;
+}
+
+.fleeter button:active {
+  box-shadow: 0 2px #003c80;
+  transform: translateY(3px);
 }
 .fleeter-image img {
   width: 500px;
@@ -279,17 +312,16 @@
   margin-top: 40px;
 }
 .construction {
+  border-radius: 10px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   text-align: center;
   padding: 20px;
   transition: transform 0.2s ease-in-out;
 }
-
 .construction:hover {
   transform: scale(1.05);
 }
-
 .construction img {
   width: 100%;
   height: 200px; /* Keep this consistent for all images */
@@ -297,7 +329,6 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
 .construction h4 {
   margin-top: 20px;
   color: #333;
@@ -309,6 +340,9 @@
 /* center-text-style */
 .center {
   background-color: lightblue;
+
+  padding: 20px;
+
   padding: 100px;
   display: grid;
   justify-content: center;
@@ -324,6 +358,12 @@
     rgb(95, 72, 72),
     lightblue
   );
+
+  width: 40%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; 
+  margin: auto;
+
   width: 30%;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
