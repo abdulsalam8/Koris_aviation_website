@@ -162,9 +162,47 @@
 }
 
 /* partners-section */
+
+.slider-text {
+  padding-top: 30px;
+}
+.slider-text h1 {
+  font-size: 1.8em;
+  font-weight: bolder;
+  color: #000;
+  margin-top: -2em;
+  text-align: right;
+}
+
+.slider-text h2 {
+  font-size: 2.3em;
+  font-weight: 600;
+  color: #000;
+}
+
+.slider-text p {
+  font-size: 1.2em;
+  font-weight: 700;
+  max-width: 500px;
+  color: #666;
+  text-align: justify;
+}
+#div {
+  height: 5px;
+  background-image: linear-gradient(to right, rgb(255, 181, 71), black);
+  width: 25%;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  margin-top: 4em;
+}
+.slider-image img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 35px 35px rgb(167, 166, 166);
+  padding-top: 20px;
+}
 .partner {
-  background-color: rgb(231, 242, 250);
-  padding: 0 150px;
+  padding: 10px 70px;
 }
 .partner .top {
   text-align: center;
@@ -173,17 +211,18 @@
   font-size: 500%;
   font-family: "arial black";
 }
-.partners-slide {
-  margin-top: 50px;
-}
+
 .partners-slide h1 {
   color: rgb(39, 118, 212);
   text-align: left;
   font-weight: bold;
 }
 .partners-slide p {
+  font-size: 1.2em;
+  font-weight: 700;
+  max-width: 500px;
+  color: #666;
   text-align: justify;
-  font-size: 20px;
 }
 .partners-image img {
   margin-left: 40px;
@@ -201,19 +240,16 @@
 }
 /* fleet-section */
 .fleet {
-  background-color: rgb(231, 242, 250);
-  padding: 0 150px;
+  padding: 0 70px;
 }
 .head {
   text-align: center;
   font-weight: bold;
-  color: rgb(5, 87, 188);
-  font-size: 500%;
-  font-family: "arial black";
+  color: #01346B;
+  font-size: 200%;
   margin-top: 90px;
 }
 .fleeter h1 {
-  color: rgb(39, 118, 212);
   text-align: left;
   font-weight: bold;
   margin-top: 100px;
@@ -221,7 +257,7 @@
 .fleeter h1 svg {
   margin-right: 5px;
   color: #fff;
-  background-color: rgb(39, 118, 212);
+  background-color: rgb(2, 2, 56);
   padding: 5px;
   border-radius: 20px;
 }
@@ -229,12 +265,29 @@
   font-size: 23px;
 }
 .fleeter button {
-  background-color: rgb(5, 87, 188);
-  border: 0px;
+  width: 200px;
+  border: none;
+  border-top-right-radius: 20px;
+  padding: 20px 15px;
+  color: #fff;
+  background-color: rgb(2, 2, 56);
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.fleeter button i {
+  vertical-align: middle;
+  margin-left: 25px;
+}
+
+.fleeter button:active {
+  box-shadow: 0 2px #003c80;
+  transform: translateY(3px);
 }
 .fleeter-image img {
   width: 500px;
-  height: 450px;
+  height: 100%;
   border-radius: 10px;
 }
 /* update-construction-section-css */
