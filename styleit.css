@@ -169,8 +169,8 @@
 .partner .top {
   text-align: center;
   font-weight: bold;
-  color: rgb(5, 87, 188);
-  font-size: 500%;
+  color: #000000;
+  font-size: 200%;
   font-family: "arial black";
 }
 .partners-slide {
@@ -237,6 +237,38 @@
   height: 450px;
   border-radius: 10px;
 }
+/* Initial state for .fleeter and .fleeter-image
+.fleeter, .fleeter-image {
+  opacity: 0;
+  transition: opacity 0.5s;
+} */
+/* CSS animation for .fleeter (coming from left) */
+/* @keyframes joinFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} */
+
+/* CSS animation for .fleeter-image (coming from right) */
+/* @keyframes joinFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} */
+
+
+
+
 /* update-construction-section-css */
 .update-construction {
   display: grid;

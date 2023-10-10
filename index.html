@@ -119,11 +119,7 @@
             </p>
           </div>
           <div class="col-md-6">
-            <img
-              src="./images/schiebel.png"
-              alt="sch"
-              class="img-fluid sch"
-            />
+            <img src="./images/schiebel.png" alt="sch" class="img-fluid sch" />
             <p
               class="text-dark mt-5"
               style="font-size: 20px; text-align: justify"
@@ -284,6 +280,7 @@
         </div>
       </div>
     </div>
+
     <!-- center-text-section -->
     <div class="container-fluid" id="team">
       <div class="center">
@@ -381,7 +378,7 @@
       </div>
     </div>
 
-      <!-- footer-section -->
+    <!-- footer-section -->
     <footer class="main-footer">
       <div class="container">
         <div class="footer-content">
@@ -467,7 +464,7 @@
         </div>
       </div>
     </footer>
-    
+
     <!-- main-footer end -->
     <div class="footer-bottom">
       <div class="container">
@@ -487,15 +484,23 @@
       </div>
     </div>
     <script>
-      window.addEventListener("scroll", function () {
-        //var for changing background color on-scroll
+      // Function to check if an element is in the viewport
+      function isElementInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= window.innerHeight &&
+          rect.right <= window.innerWidth
+        );
+      }
+
+      // Function to handle the scroll event for background and menu color changes
+      function handleScrollBackgroundAndMenu() {
         const header = document.querySelector(".sticky-header");
-        //var for changing text color on scroll
         const links = header.querySelectorAll("a");
-        //var for changing menu color on scroll
-        //var for menu selector
-        let menu = document.querySelector("#menu-icon");
-        let navmenu = document.querySelector("ul");
+        const menu = document.querySelector("#menu-icon");
+        const navmenu = document.querySelector("ul");
 
         menu.onclick = () => {
           // Toggle the "bx-menu" and "bx-x" classes on the menu icon
@@ -521,6 +526,39 @@
             link.style.color = "";
           });
         }
+      }
+
+      // Function to handle the scroll event for animations
+      function handleScrollAnimations() {
+        const fleeterElements = document.querySelectorAll(".fleeter");
+        const fleeterImageElements =
+          document.querySelectorAll(".fleeter-image");
+        // const gpoo = document.querySelectorAll(');
+
+        fleeterElements.forEach((element) => {
+          if (isElementInViewport(element)) {
+            element.style.animation = "joinFromLeft 1s ease-in-out forwards";
+          } else {
+            // Reset the animation when it leaves the viewport
+            element.style.animation = "";
+          }
+        });
+
+        fleeterImageElements.forEach((element) => {
+          if (isElementInViewport(element)) {
+            element.style.animation = "joinFromRight 0.5s ease-in-out forwards";
+          } else {
+            // Reset the animation when it leaves the viewport
+            element.style.animation = "";
+          }
+        });
+      }
+
+      // Attach scroll event listeners to the window
+      window.addEventListener("scroll", () => {
+        // Call the functions to handle scroll events
+        handleScrollBackgroundAndMenu();
+        handleScrollAnimations();
       });
     </script>
   </body>
