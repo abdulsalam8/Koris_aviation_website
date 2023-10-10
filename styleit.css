@@ -191,7 +191,7 @@
   font-weight: bolder;
   margin-bottom: 2em;
   color: #000;
-  /* margin-top: -2em; */
+  text-align: right;
 }
 
 .slider-text h2 {
@@ -205,32 +205,34 @@
   font-size: 1.2em;
   font-weight: 700;
   max-width: 500px;
-  line-height: 1.3;
   color: #666;
-  margin-bottom: 2em;
+  text-align: justify;
+  vertical-align: bottom;
 }
 #div {
   height: 5px;
   background-image: linear-gradient(to right, rgb(255, 181, 71), black);
   width: 25%;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 .partners-slide {
   /* margin-top: 50px; */ 
   
 }
 .partners-slide h1 {
-  color: rgb(2, 2, 56);
   text-align: left;
   font-weight: bold; 
   font-weight: 800;
-    color: #000; 
+  color: #000; 
 }
 .partners-slide p {
   text-align: justify;
   font-size: 20px;   
   font-weight: 800;
-    color: #6666;
+  color: #6666;
+  max-width: 600px;
+
 }
 .partners-image img {
   margin-left: 40px;
