@@ -245,7 +245,7 @@
 .head {
   text-align: center;
   font-weight: bold;
-  color: #01346B;
+  color: #01346b;
   font-size: 200%;
   margin-top: 90px;
 }
@@ -437,7 +437,44 @@
   margin: auto;
 } */
 /* review-section */
-
+.our-team .pic img {
+  border-radius: 50%;
+  box-shadow: 0 0 0 14px #2776d4;
+  box-shadow: 0 0 0 14px var(--accent);
+  height: 200;
+  position: relative;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+  max-width: 100%;
+  z-index: 2;
+}
+.our-team .post,
+.our-team .title {
+  color: #2776d4;
+  text-transform: capitalize;
+}
+.our-team .title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.our-team .post {
+  display: block;
+  font-size: 15px;
+}
+.our-team {
+  background: #f9f9f9;
+  border-bottom: 5px solid #e1eaf4;
+  border-bottom: 5px solid var(--primary);
+  border-radius: 10px;
+  height: 25rem;
+  overflow: hidden;
+  padding: 30px 0 40px;
+  position: relative;
+  text-align: center;
+}
 #event {
   padding: 50px 50px;
   /* max-height: 400px; */
@@ -727,7 +764,7 @@ ul {
 
 /* responsive-css */
 @media only screen and (max-width: 1100px) {
-    .partner .top {
+  .partner .top {
     text-align: center;
     font-weight: bold;
     color: rgb(5, 87, 188);
@@ -803,7 +840,7 @@ ul {
 }
 
 @media only screen and (max-width: 889px) {
-    .partner .top {
+  .partner .top {
     text-align: center;
     font-weight: bold;
     color: rgb(5, 87, 188);
@@ -888,7 +925,7 @@ ul {
   }
 }
 @media only screen and (max-width: 740px) {
-    .partner .top {
+  .partner .top {
     text-align: center;
     font-weight: bold;
     color: rgb(5, 87, 188);
@@ -1071,7 +1108,7 @@ ul {
   }
 
   .main-home {
-    width: 100%;
+    width: 20px ;
     height: 80vh;
     background-image: url(images/image0\ \(1\)copy.png);
     background-position: center;
