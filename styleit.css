@@ -204,19 +204,7 @@
 .partner {
   padding: 10px 70px;
 }
-.partner .top {
-  text-align: center;
-  font-weight: bold;
-  color: rgb(5, 87, 188);
-  font-size: 500%;
-  font-family: "arial black";
-}
 
-.partners-slide h1 {
-  color: rgb(39, 118, 212);
-  text-align: left;
-  font-weight: bold;
-}
 .partners-slide p {
   font-size: 1.2em;
   font-weight: 700;
@@ -245,7 +233,7 @@
 .head {
   text-align: center;
   font-weight: bold;
-  color: #01346b;
+  color: var(--primary-color);
   font-size: 200%;
   margin-top: 90px;
 }
@@ -439,88 +427,39 @@
 /* review-section */
 .our-team .pic img {
   border-radius: 50%;
-  box-shadow: 0 0 0 14px #2776d4;
-  box-shadow: 0 0 0 14px var(--accent);
-  height: 200;
-  position: relative;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  transition: all 0.9s ease 0s;
-  max-width: 100%;
+  width: 200px;
+  height: auto;
   z-index: 2;
 }
 .our-team .post,
 .our-team .title {
-  color: #2776d4;
+  /* color: var(--primary-color); */
   text-transform: capitalize;
 }
 .our-team .title {
   font-size: 22px;
   font-weight: 700;
+  color: var(--primary-color);
   letter-spacing: 1px;
-  margin-bottom: 5px;
+  margin: 5px 0;
 }
 .our-team .post {
   display: block;
+  color: var(--button-color);
   font-size: 15px;
 }
 .our-team {
   background: #f9f9f9;
-  border-bottom: 5px solid #e1eaf4;
-  border-bottom: 5px solid var(--primary);
   border-radius: 10px;
   height: 25rem;
   overflow: hidden;
   padding: 30px 0 40px;
-  position: relative;
   text-align: center;
 }
 #event {
   padding: 50px 50px;
-  /* max-height: 400px; */
-}
-.review {
-  /* margin-top: 20px; */
-  padding: 30px 20px;
-  color: var(--primary-color);
 }
 
-/* .review,
-.review-2 {
-  height: 300px;
-} */
-.review-2 {
-  background-color: lightblue;
-  margin-top: 20px;
-  padding: 30px 20px;
-  color: var(--primary-color);
-}
-
-.review h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  font-style: italic;
-  margin-bottom: 5px;
-}
-.review-2 h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  font-style: italic;
-  margin-bottom: 5px;
-  color: var(--text-color);
-}
-
-.review h2 span,
-.review-2 h2 span {
-  opacity: 0.5;
-  font-style: normal;
-  font-weight: 700;
-}
-.review-2 h2 span {
-  font-style: normal;
-  font-weight: 700;
-  color: grey;
-}
 
 /* Style for the "end" section */
 .end {
@@ -771,25 +710,22 @@ ul {
     font-size: 400%;
     font-family: "arial black";
   }
-  .head {
-    text-align: center;
-    font-weight: bold;
-    color: rgb(5, 87, 188);
-    font-size: 400%;
-    font-family: "arial black";
-    margin-top: 90px;
-  }
+ .head {
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 200%;
+  margin-top: 90px;
+}  
   .main-text {
     text-align: left;
     max-width: 600px;
     z-index: 1;
   }
   .partner {
-    background-color: rgb(231, 242, 250);
     padding: 0 100px;
   }
   .fleet {
-    background-color: rgb(231, 242, 250);
     padding: 0 100px;
   }
   .navlist {
@@ -820,12 +756,16 @@ ul {
     max-width: 500px;
     z-index: 1;
   }
+  .our-team .pic img {
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
+  z-index: 2;
+}
   .partner {
-    background-color: rgb(231, 242, 250);
     padding: 0 80px;
   }
   .fleet {
-    background-color: rgb(231, 242, 250);
     padding: 0 80px;
   }
   .footer-content .contact-widget {
@@ -840,21 +780,19 @@ ul {
 }
 
 @media only screen and (max-width: 889px) {
-  .partner .top {
-    text-align: center;
-    font-weight: bold;
-    color: rgb(5, 87, 188);
-    font-size: 350%;
-    font-family: "arial black";
-  }
-  .head {
-    text-align: center;
-    font-weight: bold;
-    color: rgb(5, 87, 188);
-    font-size: 350%;
-    font-family: "arial black";
-    margin-top: 90px;
-  }
+.our-team .pic img {
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
+  z-index: 2;
+}
+.head {
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 200%;
+  margin-top: 90px;
+}
   .main-text {
     text-align: left;
     max-width: 400px;
@@ -862,18 +800,15 @@ ul {
     z-index: 1;
   }
   .partner {
-    background-color: rgb(231, 242, 250);
     padding: 0 50px;
   }
   .fleet {
-    background-color: rgb(231, 242, 250);
     padding: 0 50px;
   }
   .slider-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-top-right-radius: 50px;
   }
   .navlist {
     margin-right: 0px;
@@ -887,12 +822,6 @@ ul {
   .logo {
     width: 50px;
     height: auto;
-  }
-  .slider-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top-right-radius: 50px;
   }
   .main-home {
     width: 100%;
@@ -925,21 +854,20 @@ ul {
   }
 }
 @media only screen and (max-width: 740px) {
-  .partner .top {
-    text-align: center;
-    font-weight: bold;
-    color: rgb(5, 87, 188);
-    font-size: 300%;
-    font-family: "arial black";
-  }
-  .head {
-    text-align: center;
-    font-weight: bold;
-    color: rgb(5, 87, 188);
-    font-size: 300%;
-    font-family: "arial black";
-    margin-top: 90px;
-  }
+.slider-text h1 {
+  font-size: 1.8em;
+  font-weight: bolder;
+  color: #000;
+  margin-top: -2em;
+  text-align: center;
+}
+.head {
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 200%;
+  margin-top: 90px;
+}
   .main-text {
     text-align: left;
     max-width: 1000px;
@@ -947,11 +875,9 @@ ul {
     z-index: 1;
   }
   .fleet {
-    background-color: rgb(231, 242, 250);
     padding: 0 30px;
   }
   .partner {
-    background-color: rgb(231, 242, 250);
     padding: 0 30px;
   }
   .slider .slider-image img {
@@ -969,13 +895,6 @@ ul {
     padding-left: 5px;
   }
 
-  .slider-text h1 {
-    font-size: 1.8em;
-    font-weight: bolder;
-    margin-bottom: 1em;
-    color: #000;
-    margin-top: 0;
-  }
 
   .slider-text h2 {
     font-size: 2.3em;
@@ -987,7 +906,6 @@ ul {
   .slider-text p {
     font-size: 1.2em;
     font-weight: 700;
-    max-width: 400px;
     line-height: 1.3;
     color: #666;
     margin-bottom: 1em;
@@ -1083,27 +1001,18 @@ ul {
     display: block;
   }
 
-  .partner .top {
-    text-align: center;
-    font-weight: bold;
-    color: rgb(5, 87, 188);
-    font-size: 200%;
-    font-family: "arial black";
-  }
+
   .head {
-    text-align: center;
-    font-weight: bold;
-    color: rgb(5, 87, 188);
-    font-size: 200%;
-    font-family: "arial black";
-    margin-top: 90px;
-  }
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 200%;
+  margin-top: 90px;
+}
   .partner {
-    background-color: rgb(231, 242, 250);
     padding: 0 10px;
   }
   .fleet {
-    background-color: rgb(231, 242, 250);
     padding: 0 10px;
   }
 
