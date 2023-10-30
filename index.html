@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -28,6 +29,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>koris</title>
   </head>
   <body>
@@ -83,29 +85,39 @@
     <div class="partner">
       <div class="row">
         <div class="col-md-6 slider-text">
-          <h1>OUR PARTNERS</h1>
-          <div id="div"></div>
-          <h2>KORIS AVIATION</h2>
-          <p>
-            Koris Aviation understands that trying to do everything by yourself
-            is a fast track to failure. We seek and develop long lasting
-            relationships with our partners to offer product enhancement and
-            differentiation. This approach helps us to provide the best possible
-            service for our clients. Our strategic partnership with the
-            Schiebel-GmbH and Springfountain Infrastructure Ltd provides the
-            flexibility to create tailored solutions not available elsewhere at
-            low cost.
-          </p>
+          <div data-aos="fade-right">
+            <h1>OUR PARTNERS</h1>
+            <div id="div"></div>
+            <h2>KORIS AVIATION</h2>
+            <p>
+              Koris Aviation understands that trying to do everything by
+              yourself is a fast track to failure. We seek and develop long
+              lasting relationships with our partners to offer product
+              enhancement and differentiation. This approach helps us to provide
+              the best possible service for our clients. Our strategic
+              partnership with the Schiebel-GmbH and Springfountain
+              Infrastructure Ltd provides the flexibility to create tailored
+              solutions not available elsewhere at low cost.
+            </p>
+          </div>
         </div>
-        <div class="col-md-6 slider-image">
-          <img
-            src="./images/cc.2ba7a3bb49c76ad0079b.jpg"
-            alt="part"
-            class="img-fluid"
-          />
+
+        <div class="col-md-6 slider-image" data-aos="zoom-in-left">
+          <div>
+            <img
+              src="./images/cc.2ba7a3bb49c76ad0079b.jpg"
+              alt="part"
+              class="img-fluid"
+            />
+          </div>
         </div>
         <div class="row">
-          <div class="col-md-6 partners-slide">
+          <div
+            class="col-md-6 partners-slide"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <img src="./images/sprng.png" alt="sch" class="img-fluid" />
             <p class="text-dark mt-5">
               Springfountain Infrastructure Limited (SIL) is one of the leading
@@ -119,7 +131,12 @@
               customers.
             </p>
           </div>
-          <div class="col-md-6 partners-slide">
+          <div
+            class="col-md-6 partners-slide"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <img src="./images/schiebel.png" alt="sch" class="img-fluid sch" />
             <p class="text-dark mt-5">
               Founded in 1951 in Vienna, the globally operating Schiebel Group
@@ -142,7 +159,7 @@
         <div class="mx-0 my-3 row">
           <h1 class="head">OUR FLEET</h1>
           <div class="col-md-6 fleeter">
-            <h1>
+            <h1 data-aos="fade-right">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -159,43 +176,45 @@
               </svg>
               S-100 CAMCOPTER
             </h1>
-            <p id="initialText1">
-              Schiebel’s CAMCOPTER® S-100 Unmanned Air System (UAS) is a proven
-              capability for military and civilian applications. The Vertical
-              Takeoff and Landing (VTOL) UAS needs no prepared area or
-              supporting launch or recovery equipment. It op...
-            </p>
-            <p id="additionalText1" style="display: none">
-              Schiebel’s CAMCOPTER® S-100 Unmanned Air System (UAS) is a proven
-              capability for military and civilian applications. The Vertical
-              Takeoff and Landing (VTOL) UAS needs no prepared area or
-              supporting launch or recovery equipment. It operates day and
-              night, under adverse weather conditions, with a range out to 200
-              km, both on land and at sea. The S-100 navigates automatically via
-              pre-programmed GPS waypoints or can be operated directly with a
-              pilot control unit. Missions are planned and controlled via a
-              simple point-and-click graphical user interface. High-definition
-              payload imagery is transmitted to the control station in real
-              time. Using "fly-by-wire" technology controlled by redundant
-              flight computers, the UAV can complete its mission automatically
-              in the most complex of electromagnetic environments. Its carbon
-              fiber and titanium fuselage provides capacity for a wide range of
-              payload / endurance combinations.
-            </p>
-            <button onclick="toggleText1()" id="toggleButton1" type="button">
-              Read More <i class="bx bxs-down-arrow-alt"></i>
-            </button>
+            <div data-aos="fade-up">
+              <p id="initialText1">
+                Schiebel’s CAMCOPTER® S-100 Unmanned Air System (UAS) is a
+                proven capability for military and civilian applications. The
+                Vertical Takeoff and Landing (VTOL) UAS needs no prepared area
+                or supporting launch or recovery equipment. It op...
+              </p>
+              <p id="additionalText1" style="display: none">
+                Schiebel’s CAMCOPTER® S-100 Unmanned Air System (UAS) is a
+                proven capability for military and civilian applications. The
+                Vertical Takeoff and Landing (VTOL) UAS needs no prepared area
+                or supporting launch or recovery equipment. It operates day and
+                night, under adverse weather conditions, with a range out to 200
+                km, both on land and at sea. The S-100 navigates automatically
+                via pre-programmed GPS waypoints or can be operated directly
+                with a pilot control unit. Missions are planned and controlled
+                via a simple point-and-click graphical user interface.
+                High-definition payload imagery is transmitted to the control
+                station in real time. Using "fly-by-wire" technology controlled
+                by redundant flight computers, the UAV can complete its mission
+                automatically in the most complex of electromagnetic
+                environments. Its carbon fiber and titanium fuselage provides
+                capacity for a wide range of payload / endurance combinations.
+              </p>
+              <button onclick="toggleText1()" id="toggleButton1" type="button">
+                Read More <i class="bx bxs-down-arrow-alt"></i>
+              </button>
+            </div>
           </div>
-          <div class="col-md-6 fleeter-image">
+          <div class="col-md-6 fleeter-image" data-aos="zoom-in-left">
             <img class="img-fluid" src="./images/capcuter.png" alt="drone" />
           </div>
         </div>
         <div class="mx-0 my-3 row">
-          <div class="col-md-6 fleeter-image">
+          <div class="col-md-6 fleeter-image" data-aos="zoom-in-right">
             <img class="img-fluid" src="./images/rtk.png" alt="drone" />
           </div>
           <div class="col-md-6 fleeter">
-            <h1>
+            <h1 data-aos="zoom-in-left">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -210,9 +229,10 @@
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
               </svg>
-              S-200 CAMCOPTER
+             MATRICE 300 RTK
             </h1>
-            <p id="initialText2">
+            <div data-aos="fade-up">
+              <p id="initialText2">
               The Matrice 300 RTK is DJI’s latest commercial drone platform that
               takes inspiration from modern aviation systems. Offering up to 55
               minutes of flight time, advanced AI capabilities, 6 Directional
@@ -233,11 +253,12 @@
             <button onclick="toggleText2()" id="toggleButton2" type="button">
               Read More <i class="bx bxs-down-arrow-alt"></i>
             </button>
+            </div>
           </div>
         </div>
         <div class="mx-0 my-3 row">
           <div class="col-md-6 fleeter">
-            <h1>
+            <h1 data-aos="fade-right">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -252,9 +273,10 @@
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
               </svg>
-              S-300 CAMCOPTER
+              MATRICE 210 RTK V2
             </h1>
-            <p id="initialText3">
+            <div data-aos="fade-up">
+              <p id="initialText3">
               Built to Endure. Engineered to Adapt. The ultimate platform for
               aerial productivity combines a rugged design and simple
               configurability to work as a solution for a variety of industrial
@@ -271,17 +293,18 @@
             <button onclick="toggleText3()" id="toggleButton3" type="button">
               Read More <i class="bx bxs-down-arrow-alt"></i>
             </button>
+            </div>
           </div>
-          <div class="col-md-6 fleeter-image">
+          <div class="col-md-6 fleeter-image" data-aos="zoom-in-left">
             <img class="img-fluid" src="./images/rtkv2.png" alt="drone" />
           </div>
         </div>
         <div class="mx-0 my-3 row">
-          <div class="col-md-6 fleeter-image">
+          <div class="col-md-6 fleeter-image" data-aos="zoom-in-right">
             <img class="img-fluid" src="./images/series.png" alt="drone" />
           </div>
           <div class="col-md-6 fleeter">
-            <h1>
+            <h1 data-aos="zoom-in-left">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -296,9 +319,10 @@
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
               </svg>
-              S-300 CAMCOPTER
+             MARVIC 2 SERIES
             </h1>
-            <p id="initialText4">
+            <div data-aos="fade-up">
+              <p id="initialText4">
               Built to Empower. Destined to Serve. Designed to empower a new
               generation of workers, the Mavic 2 Enterprise is the ultimate
               expression of a tool that delivers beyond expectation to meet
@@ -318,6 +342,7 @@
             <button onclick="toggleText4()" id="toggleButton4" type="button">
               Read More <i class="bx bxs-down-arrow-alt"></i>
             </button>
+            </div>
           </div>
         </div>
       </div>
@@ -372,7 +397,7 @@
             </div>
             <div class="team-content">
               <h4 class="title">FATIMA MUHAMMED</h4>
-              <span class="px-1 post">Assistant Company Secretary</span>
+              <span class="px-1 post">Company Secretary</span>
             </div>
           </div>
         </div>
@@ -408,7 +433,7 @@
             </div>
             <div class="team-content">
               <h4 class="title">HAMZA MUHAMMED</h4>
-              <span class="px-1 post">Facility Manager</span>
+              <span class="px-1 post">Quality and Safety Manager</span>
             </div>
           </div>
         </div>
@@ -611,6 +636,7 @@
           });
         }
       });
+      AOS.init();
     </script>
   </body>
 </html>
