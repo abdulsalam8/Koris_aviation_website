@@ -1,0 +1,99 @@
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  transition: background-color 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 5px 50px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 70px;
+  height: auto;
+}
+.navlist {
+  margin-right: 200px;
+}
+.navlist ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navlist li {
+  margin-right: 20px;
+}
+
+.navlist a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  position: relative;
+  font-size: 1.1em;
+}
+.navlist a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  left: 0;
+  bottom: -6px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.navlist a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.navlist a:hover {
+  color: var(--primary-color);
+}
+#menu-icon {
+  color: #222;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+/* Style for the initial page */
+.heading {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+
+   
+  
+  /* Style for the extended content page */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .extended-heading {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
