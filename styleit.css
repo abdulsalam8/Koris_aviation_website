@@ -706,6 +706,16 @@ ul {
 .element {
   padding: 50px;
   max-width: 80%;
+  margin: auto;
+}
+.element h1 {
+  text-align: center;
+}
+.element button {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 /* responsive-css */
 @media only screen and (max-width: 1100px) {
