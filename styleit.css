@@ -161,7 +161,58 @@
   bottom: 0;
   right: 0;
 }
-
+/* =======aboutus======== */
+.aboutus h1 {
+  text-align: center;
+  font-weight: bold;
+  margin: 0px;
+}
+.aboutus {
+  padding: 0 150px;
+  margin-bottom: 50px;
+}
+.aboutus p {
+  margin-bottom: 1rem;
+  font-size: 120%;
+  text-align: center;
+}
+.maker {
+  border-radius: 20px;
+  width: 300px;
+  height: 150px;
+  padding: 5%;
+  background-color: var(--primary-color);
+  border: 0px;
+  color: white;
+  margin-bottom: 15px;
+}
+.maker h3 {
+  font-size: 25px;
+  text-align: center;
+}
+/* .drone {
+  margin: 0;
+  padding: 0;
+} */
+.drone p {
+  font-size: 19px;
+  line-height: 1.7;
+}
+.drone h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+}
+/* =======vission======= */
+.vission {
+  border-radius: 5px;
+  background-color: var(--button-color);
+  border-width: initial;
+  border-style: none;
+  border-image: initial;
+  height: 95%;
+  padding: 16px;
+}
 /* partners-section */
 
 .slider-text {
@@ -283,23 +334,21 @@
 /* update-construction-section-css */
 .update-construction {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
   margin-bottom: 40px;
   margin-top: 40px;
+  background-color: transparent;
 }
 .construction {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
   transition: transform 0.2s ease-in-out;
 }
 
-.construction:hover {
-  transform: scale(1.05);
-}
 
 .construction img {
   width: 100%;
@@ -309,14 +358,48 @@
   border-top-right-radius: 10px;
 }
 
-.construction h4 {
+.construction .h4 {
   margin-top: 20px;
   color: #333;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
+  text-align: center;
+  padding: 20px;
 }
 
+.card-footer {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-footer button {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--primary-color);
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transform-origin: right;
+  box-shadow: inset 0 0 0 0 var(--primary-color);
+}
+
+.card-footer button:hover {
+  color: white;
+  box-shadow: inset 200px -100px 0 0 var(--primary-color);
+}
+
+.card-footer button:active {
+  transform: scale(0.9);
+}
 /* center-text-style */
 .center {
   background-color: lightblue;
@@ -461,7 +544,6 @@
 #event {
   padding: 50px 50px;
 }
-
 
 /* Style for the "end" section */
 .end {
@@ -719,6 +801,15 @@ ul {
 }
 /* responsive-css */
 @media only screen and (max-width: 1100px) {
+  .drone p {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+  .drone h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
   .partner .top {
     text-align: center;
     font-weight: bold;
@@ -726,13 +817,16 @@ ul {
     font-size: 400%;
     font-family: "arial black";
   }
- .head {
-  text-align: center;
-  font-weight: bold;
-  color: var(--primary-color);
-  font-size: 200%;
-  margin-top: 90px;
-}  
+  .aboutus {
+    padding: 0 80px;
+  }
+  .head {
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 200%;
+    margin-top: 90px;
+  }
   .main-text {
     text-align: left;
     max-width: 600px;
@@ -767,17 +861,20 @@ ul {
 }
 
 @media only screen and (max-width: 989px) {
+  .aboutus {
+    padding: 60px;
+  }
   .main-text {
     text-align: left;
     max-width: 500px;
     z-index: 1;
   }
   .our-team .pic img {
-  border-radius: 50%;
-  width: 150px;
-  height: auto;
-  z-index: 2;
-}
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    z-index: 2;
+  }
   .partner {
     padding: 0 80px;
   }
@@ -800,19 +897,22 @@ ul {
 }
 
 @media only screen and (max-width: 889px) {
-.our-team .pic img {
-  border-radius: 50%;
-  width: 150px;
-  height: auto;
-  z-index: 2;
-}
-.head {
-  text-align: center;
-  font-weight: bold;
-  color: var(--primary-color);
-  font-size: 200%;
-  margin-top: 90px;
-}
+  .our-team .pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    z-index: 2;
+  }
+  .aboutus {
+    padding: 30px;
+  }
+  .head {
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 200%;
+    margin-top: 90px;
+  }
   .main-text {
     text-align: left;
     max-width: 400px;
@@ -874,20 +974,26 @@ ul {
   }
 }
 @media only screen and (max-width: 740px) {
-.slider-text h1 {
-  font-size: 1.8em;
-  font-weight: bolder;
-  color: #000;
-  margin-top: -2em;
-  text-align: center;
-}
-.head {
-  text-align: center;
-  font-weight: bold;
-  color: var(--primary-color);
-  font-size: 200%;
-  margin-top: 90px;
-}
+  .aboutus {
+    padding: 20px;
+  }
+  .maker {
+    width: 270px;
+  }
+  .slider-text h1 {
+    font-size: 1.8em;
+    font-weight: bolder;
+    color: #000;
+    margin-top: -2em;
+    text-align: center;
+  }
+  .head {
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 200%;
+    margin-top: 90px;
+  }
   .main-text {
     text-align: left;
     max-width: 1000px;
@@ -914,7 +1020,6 @@ ul {
     padding-top: 30px;
     padding-left: 5px;
   }
-
 
   .slider-text h2 {
     font-size: 2.3em;
@@ -1021,6 +1126,12 @@ ul {
   }
 }
 @media only screen and (max-width: 540px) {
+  .aboutus {
+    padding: 5px;
+  }
+  .maker {
+    width: 100%;
+  }
   #menu-icon {
     display: block;
   }
@@ -1030,12 +1141,12 @@ ul {
   }
 
   .head {
-  text-align: center;
-  font-weight: bold;
-  color: var(--primary-color);
-  font-size: 200%;
-  margin-top: 90px;
-}
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 200%;
+    margin-top: 90px;
+  }
   .partner {
     padding: 0 10px;
   }
@@ -1043,17 +1154,6 @@ ul {
     padding: 0 10px;
   }
 
-  .main-home {
-    width: 20px ;
-    height: 80vh;
-    background-image: url(images/image0\ \(1\)copy.png);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    padding: 0 40px;
-    margin-bottom: 100px;
-  }
   .main-text {
     text-align: left;
     max-width: 700px;

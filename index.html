@@ -1,509 +1,940 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      rel="shortcut icon"
+      href="./images/logo2.69d181293abef1ab7d66.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styleit.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>koris</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <link rel="shortcut icon" href="./images/logo2.69d181293abef1ab7d66.png" type="image/x-icon">
-  <link rel="stylesheet" href="styleit.css" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <title>koris</title>
-</head>
+  <body>
+    <!-- header-section -->
+    <header class="sticky-header">
+      <div class="header-content">
+        <a href="#"
+          ><img
+            src="./images/logo2.69d181293abef1ab7d66.png"
+            alt="logo"
+            class="logo"
+        /></a>
 
-<body>
-  <!-- header-section -->
-  <header class="sticky-header">
-    <div class="header-content">
-      <a href="#"><img src="./images/logo2.69d181293abef1ab7d66.png" alt="logo" class="logo" /></a>
-
-      <nav class="navlist">
-        <ul>
-          <li><a href="#about">About us</a></li>
-          <li><a href="#partners">Our partners</a></li>
-          <li><a href="#fleet">Our fleet</a></li>
-          <li><a href="#team">Our team</a></li>
-          <li><a href="#services">Our services</a></li>
-          <li><a href="#event">Events</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-
-      <div id="menu-icon">
-        <i class="bx bx-menu"></i>
-      </div>
-    </div>
-  </header>
-
-  <!-- main-home-section -->
-  <section class="main-home" id="about">
-    <div class="main-text">
-      <h3>Koris Aviation & Consultancy Ltd</h3>
-      <h1>Advanced Drone Services</h1>
-      <a href="#partners"> <button type="button">Learn more</button></a>
-    </div>
-    <div class="main-image">
-      <img src="./images/image0__1__-_Copy-removebg-preview.png" class="top-image" alt="" />
-      <img src="./images/image0__1_-removebg-preview.png" class="bottom-image" alt="" />
-    </div>
-  </section>
-  <!-- partners-section -->
-  <div class="partner" id="partners">
-    <div class="row">
-      <div class="col-md-6 slider-text">
-        <div data-aos="fade-right" data-aos-once="true">
-          <h1>OUR PARTNERS</h1>
-          <div id="div"></div>
-          <h2>KORIS AVIATION</h2>
-          <p>
-            Koris Aviation understands that trying to do everything by
-            yourself is a fast track to failure. We seek and develop long
-            lasting relationships with our partners to offer product
-            enhancement and differentiation. This approach helps us to provide
-            the best possible service for our clients. Our strategic
-            partnership with the Schiebel-GmbH and Springfountain
-            Infrastructure Ltd provides the flexibility to create tailored
-            solutions not available elsewhere at low cost.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 slider-image" data-aos="zoom-in-left" data-aos-once="true">
-        <div>
-          <img src="./images/cc.2ba7a3bb49c76ad0079b.jpg" alt="part" class="img-fluid" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 partners-slide" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
-          data-aos-once="true">
-          <img src="./images/sprng.png" alt="sch" class="img-fluid" />
-          <p class="text-dark mt-5">
-            Springfountain Infrastructure Limited (SIL) is one of the leading
-            Infrastructure Development Companies and Aviation Solution
-            Providers in Nigeria. They provide infrastructure to the Aviation,
-            Maritime and Mining Sectors across the West African Region. They
-            are a multi-disciplinary organisation with strengths and
-            expertise, in financial and engineering project conceptualisation
-            and management. As project developers, they identify the right
-            team to form consortia that delivers value and satisfaction to
-            customers.
-          </p>
-        </div>
-        <div class="col-md-6 partners-slide" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
-          data-aos-once="true">
-          <img src="./images/schiebel.png" alt="sch" class="img-fluid sch" />
-          <p class="text-dark mt-5">
-            Founded in 1951 in Vienna, the globally operating Schiebel Group
-            focuses on the development, testing and production of the
-            revolutionary CAMCOPTER® S-100 Unmanned Air System (UAS).
-            Certified to meet AS / EN 9100 standards, Schiebel has built an
-            international reputation for producing high-tech military,
-            commercial and humanitarian products, which are backed by
-            exceptional after-sales service and support. Schiebel maintains
-            facilities in Vienna (Austria), Wiener Neustadt (Austria),
-            Washington, DC (USA), Abu Dhabi (UAE), and Shoalhaven (Australia).
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- fleet -->
-  <div class="fleet" id="fleet">
-    <div>
-      <div class="mx-0 my-3 row">
-        <h1 class="head">OUR FLEET</h1>
-        <div class="col-md-6 fleeter">
-          <h1 data-aos="fade-right" data-aos-once="true" data-aos-once="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-            S-100 CAMCOPTER
-          </h1>
-          <div data-aos="fade-up" data-aos-once="true">
-            <p id="initialText1">
-              Schiebel’s CAMCOPTER® S-100 Unmanned Air System (UAS) is a
-              proven capability for military and civilian applications. The
-              Vertical Takeoff and Landing (VTOL) UAS needs no prepared area
-              or supporting launch or recovery equipment. It op...
-            </p>
-            <p id="additionalText1" style="display: none">
-              Schiebel’s CAMCOPTER® S-100 Unmanned Air System (UAS) is a
-              proven capability for military and civilian applications. The
-              Vertical Takeoff and Landing (VTOL) UAS needs no prepared area
-              or supporting launch or recovery equipment. It operates day and
-              night, under adverse weather conditions, with a range out to 200
-              km, both on land and at sea. The S-100 navigates automatically
-              via pre-programmed GPS waypoints or can be operated directly
-              with a pilot control unit. Missions are planned and controlled
-              via a simple point-and-click graphical user interface.
-              High-definition payload imagery is transmitted to the control
-              station in real time. Using "fly-by-wire" technology controlled
-              by redundant flight computers, the UAV can complete its mission
-              automatically in the most complex of electromagnetic
-              environments. Its carbon fiber and titanium fuselage provides
-              capacity for a wide range of payload / endurance combinations.
-            </p>
-            <a href="./READMORE/S-100 CAMCOPTER.html" rel="noopener noreferrer">
-              <button>
-                Read More <i class="bx bxs-right-arrow-alt"></i>
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 fleeter-image" data-aos="zoom-in-left" data-aos-once="true">
-          <img class="img-fluid" src="./images/capcuter.png" alt="drone" />
-        </div>
-      </div>
-      <div class="mx-0 my-3 row">
-        <div class="col-md-6 fleeter-image" data-aos="zoom-in-right" data-aos-once="true">
-          <img class="img-fluid" src="./images/rtk.png" alt="drone" />
-        </div>
-        <div class="col-md-6 fleeter">
-          <h1 data-aos="zoom-in-left" data-aos-once="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-            MATRICE 300 RTK
-          </h1>
-          <div data-aos="fade-up" data-aos-once="true">
-            <p id="initialText2">
-              The Matrice 300 RTK is DJI’s latest commercial drone platform that
-              takes inspiration from modern aviation systems. Offering up to 55
-              minutes of flight time, advanced AI capabilities, 6 Directional
-              Sensing & Positioning and more, the M300...
-            </p>
-            <p id="additionalText2" style="display: none">
-              The Matrice 300 RTK is DJI’s latest commercial drone platform that
-              takes inspiration from modern aviation systems. Offering up to 55
-              minutes of flight time, advanced AI capabilities, 6 Directional
-              Sensing & Positioning and more, the M300 RTK sets a whole new
-              standard by combining intelligence with high-performance and
-              unrivaled reliability. The all-new OcuSync Enterprise enables
-              transmission up to 15 km away and supports triple-channel3 1080p
-              video. Real-time auto-switching between 2.4 GHz and 5.8 GHz4
-              enables more reliable flight near high-interference environments,
-              while AES-256 encryption offers secure data transmission.
-            </p>
-            <a href="./READMORE/matrice.html" rel="noopener noreferrer">
-              <button onclick="redirectToPage()">
-                Read More <i class="bx bxs-right-arrow-alt"></i>
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mx-0 my-3 row">
-        <div class="col-md-6 fleeter">
-          <h1 data-aos="fade-right" data-aos-once="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-            MATRICE 210 RTK V2
-          </h1>
-          <div data-aos="fade-up" data-aos-once="true">
-            <p id="initialText3">
-              Built to Endure. Engineered to Adapt. The ultimate platform for
-              aerial productivity combines a rugged design and simple
-              configurability to work as a solution for a variety of industrial
-              applications. Improvements to the M200 Series V2 ...
-            </p>
-            <p id="additionalText3" style="display: none">
-              Built to Endure. Engineered to Adapt. The ultimate platform for
-              aerial productivity combines a rugged design and simple
-              configurability to work as a solution for a variety of industrial
-              applications. Improvements to the M200 Series V2 enhance
-              intelligent control systems, flight performance, and add flight
-              safety and data security features.
-            </p>
-            <a href="./READMORE/matrice210.html" rel="noopener noreferrer">
-              <button>
-                Read More <i class="bx bxs-right-arrow-alt"></i>
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 fleeter-image" data-aos="zoom-in-left" data-aos-once="true">
-          <img class="img-fluid" src="./images/rtkv2.png" alt="drone" />
-        </div>
-      </div>
-      <div class="mx-0 my-3 row">
-        <div class="col-md-6 fleeter-image" data-aos="zoom-in-right" data-aos-once="true">
-          <img class="img-fluid" src="./images/series.png" alt="drone" />
-        </div>
-        <div class="col-md-6 fleeter">
-          <h1 data-aos="zoom-in-left" data-aos-once="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-            MARVIC 2 SERIES
-          </h1>
-          <div data-aos="fade-up" data-aos-once="true">
-            <p id="initialText4">
-              Built to Empower. Destined to Serve. Designed to empower a new
-              generation of workers, the Mavic 2 Enterprise is the ultimate
-              expression of a tool that delivers beyond expectation to meet
-              current workplace challenges and future demands. Oper...
-            </p>
-            <p id="additionalText4" style="display: none">
-              Built to Empower. Destined to Serve. Designed to empower a new
-              generation of workers, the Mavic 2 Enterprise is the ultimate
-              expression of a tool that delivers beyond expectation to meet
-              current workplace challenges and future demands. Operate with
-              Clarity and Enhanced Vision For enhanced image visibility on all
-              your captured data, Isotherm helps you get accurate heat
-              measurements on a variety of objects and scenarios. With the
-              Customize feature, you can set predefined Isotherm settings to
-              suit your operational needs.
-            </p>
-            <a href="./READMORE/maevic.html" rel="noopener noreferrer">
-              <button>
-                Read More <i class="bx bxs-right-arrow-alt"></i>
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- center-text-section -->
-  <div class="container-fluid" id="services">
-    <div class="center">
-      <div class="linear"></div>
-      <h1>You're in good hands</h1>
-
-      <p>
-        We work with you to help identify the opportunities/risks, new
-        strategies, documentations and performance targets that can be easily
-        followed and implemented. We provide our customers with cutting edge,
-        advanced imagery with post-analytical solutions for more informed
-        decisions. We are totally committed to using UAV technology in a
-        responsible and ethical manner.
-      </p>
-
-      <button>Learn More</button>
-    </div>
-  </div>
-
-  <!-- second-center-section -->
-  <div class="container-fluid" id="team">
-    <div class="second-center">
-      <div id="di" class="linear4"></div>
-
-      <div class="heading white-heading">Our team</div>
-      <div id="div" style="margin: auto; width: 15%"></div>
-    </div>
-  </div>
-
-  <!-- review-section -->
-  <div class="container" id="event">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="our-team shadow-sm mb-5">
-          <div class="pic">
-            <img src="./images/isah kuta.jpg" alt="team_image" />
-          </div>
-          <div class="team-content">
-            <h4 class="title">ISAH KUTA ABDUL</h4>
-            <span class="px-1 post">Managing Director</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="our-team shadow-sm mb-5">
-          <div class="pic">
-            <img src="./images/fatima muhammad.jpg" alt="team_image" />
-          </div>
-          <div class="team-content">
-            <h4 class="title">Fatima Muhammad</h4>
-            <span class="px-1 post">Company Secretary</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="our-team shadow-sm mb-5">
-          <div class="pic">
-            <img src="./images/abubakar sadiq.png" alt="team_image" />
-          </div>
-          <div class="team-content">
-            <h4 class="title">ABUBAKAR SADIQ</h4>
-            <span class="px-1 post">Business Development Manager</span>
-          </div>
-          <ul class="social"></ul>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="our-team shadow-sm mb-5">
-          <div class="pic">
-            <img src="./images/mary.jpg" alt="team_image" />
-          </div>
-          <div class="team-content">
-            <h4 class="title">MARY MICHAEL</h4>
-            <span class="px-1 post">Public Relations Officer</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="our-team shadow-sm mb-5">
-          <div class="pic">
-            <img src="./images/hamza muhammad.jpg" alt="team_image" />
-          </div>
-          <div class="team-content">
-            <h4 class="title">HAMZA MUHAMMED</h4>
-            <span class="px-1 post">Quality and Safety Manager</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="our-team shadow-sm mb-5">
-          <div class="pic">
-            <img src="./images/Muhammed Muhammed Abba.png" alt="team_image" />
-          </div>
-          <div class="team-content">
-            <h4 class="title">Muhammed Muhammed Abba</h4>
-            <span class="px-1 post">Finance Manager</span>
-          </div>
-        </div>
-      </div>
-    </div>
-     <div class="row">
-      <div class="col-md-4">
-        <div class="our-team shadow-sm mb-5">
-          <div class="pic">
-            <img src="./images/CAPT. Abdulkadir S Abdulkadir.png" alt="team_image" />
-          </div>
-          <div class="team-content">
-            <h4 class="title">CAPT. Abdulkadir S Abdulkadir</h4>
-            <span class="px-1 post">Chief Pilot</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="our-team shadow-sm mb-5">
-          <div class="pic">
-            <img src="./images/Amir Saleh-Bala.jpeg" alt="team_image" />
-          </div>
-          <div class="team-content">
-            <h4 class="title">Amir Saleh-Bala</h4>
-            <span class="px-1 post">Head of Operations</span>
-          </div>
-          <ul class="social"></ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- footer-section -->
-  <footer class="main-footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-            <div class="logo-widget footer-widget">
-              <figure class="logo-box">
-                <a href="#"><img src="images/logo2.69d181293abef1ab7d66.png" alt="" /></a>
-              </figure>
-              <div class="text">
-                <p>
-                  We reduce man hour and cost, improve safety and efficiency
-                </p>
-                <a href="#services">
-                  <button type="button">
-                    Our Services
-                    <i class="bx bxs-right-arrow-alt"></i></button></a>
-                <p>Connect With Us:@korisaviation</p>
-              </div>
-              <ul class="footer-social">
-                <li>
-                  <a href="https://www.facebook.com/korisaviation" target="_blank"><i class="bx bxl-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/korisaviation/" target="_blank"><i class="bx bxl-twitter"></i></a>
-                </li>
-
-                <li>
-                  <a href="https://www.instagram.com/korisaviation/" target="_blank"><i
-                      class="bx bxl-instagram-alt"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/korisaviation/" target="_blank"><i
-                      class="bx bxl-linkedin"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 offset-lg-2 footer-column">
-            <div class="service-widget footer-widget">
-              <div class="footer-title">Other Services </div>
-              <ul class="list">
-                <li><a href="#">UAV Operations,Training & Maintenance</a></li>
-                <li><a href="#">UAV Design, Manufacturing & Sales</a></li>
-                <li>
-                  <a href="#">Aircraft Operations & Support Services</a>
-                </li>
-                <li><a href="#">Aerospace & Communications</a></li>
-                <!-- <li><a href="#">Privacy and Terms</a></li> -->
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 footer-widget">
-            <div class="contact-widget footer-widget">
-              <div class="footer-title">Contacts Us</div>
-              <div class="text">
-                <p>
-                  No 1 ME Ahmed Street, NAF Valley Estate, Asokoro District
-                  Abuja Nigeria
-                </p>
-                <p>Phone Number: +2347026534935</p>
-                <p>WhatsApp Number: +2348122140098</p>
-                <p>Email: inquiry@korisaviation.ng</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- main-footer end -->
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 column">
-          <div class="copyright">
-            <a href="#">Koris</a> &copy; 2023 All Right Reserved
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 column">
-          <ul class="footer-nav">
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+        <nav class="navlist">
+          <ul>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#partners">Our partners</a></li>
+            <li><a href="#fleet">Our fleet</a></li>
+            <li><a href="#team">Our team</a></li>
+            <li><a href="#services">Our services</a></li>
+            <li><a href="#event">Events</a></li>
+            <li><a href="#">Blog</a></li>
           </ul>
+        </nav>
+
+        <div id="menu-icon">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- =============================MAIN-HOME====================================== -->
+    <section class="main-home">
+      <div class="main-text">
+        <h3>Koris Aviation & Consultancy Ltd</h3>
+        <h1>Advanced Drone Services</h1>
+        <a href="#about"> <button type="button">Learn more</button></a>
+      </div>
+      <div class="main-image">
+        <img
+          src="./images/image0__1__-_Copy-removebg-preview.png"
+          class="top-image"
+          alt=""
+        />
+        <img
+          src="./images/image0__1_-removebg-preview.png"
+          class="bottom-image"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- ===================================ABOUT-US======================================== -->
+    <div class="aboutus">
+      <h1>Why Choose Us?</h1>
+      <p>We provide high-end aviation and security products and services.</p>
+      <!-- ========boubbles======== -->
+      <div class="mt-5 row">
+        <div class="col-sm-6 col-lg-4">
+          <div data-aos="fade-right" data-aos-once="true" class="maker card">
+            <h3>Fully Indigenous Team</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div data-aos="fade-up" data-aos-once="true" class="maker card">
+            <h3>Onshore/Offshore Services</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div data-aos="fade-down" data-aos-once="true" class="maker card">
+            <h3>
+              Our commitment to the Total Development of the Nigerian Content
+            </h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div data-aos="fade-left" data-aos-once="true" class="maker card">
+            <h3>Our Flexible Dynamic service, Rapid Response times</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div data-aos="fade-right" data-aos-once="true" class="maker card">
+            <h3>Our Technical Capabilities</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div data-aos="fade-left" data-aos-once="true" class="maker card">
+            <h3>Our Strategic Partnerships</h3>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <!-- =======main-about=========== -->
+    <div class="about-2us" id="about">
+      <div class="partner">
+        <!-- =======first-slide========= -->
+        <div class="row">
+          <h1 class="head">ABOUT US</h1>
+          <div class="col-md-6 slider-text">
+            <div data-aos="fade-right" data-aos-once="true">
+              <p class="me-2">
+                Koris Aviation & Consultancy Ltd was incorporated in Nigeria in
+                2013 to conduct business globally. The Company was founded with
+                the desire to meet the fast-growing demand for UAV applications
+                among others. Our core capabilities are Aerial Monitoring,
+                Inspections of Critical Infrastructure, Survey, Mapping and
+                Videography. We provide objective technical, financial and
+                commercial guidance to aviation clients to navigate the complex
+                and evolving aviation and aerospace industry.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 slider-image">
+            <img class="img-fluid" src="./images/consultancy.jpg" alt="drone" />
+          </div>
+        </div>
+        <!-- =====second-slide======== -->
+        <div class="row">
+          <div class="col-md-6 slider-image">
+            <img class="img-fluid" src="./images/solution.jpg" alt="drone" />
+          </div>
+          <div class="col-md-6 slider-text">
+            <h1
+              data-aos="zoom-in-left"
+              data-aos-once="true"
+              class="mt-4 text-center"
+            >
+              Our Solutions
+            </h1>
+            <div data-aos="fade-up" data-aos-once="true">
+              <p class="">
+                Built to Empower. Destined to Serve. Designed to empower a new
+                We provide high-end aviation and security products and services,
+                with headquarters in Abuja, Nigeria. The company conceptualizes
+                designs and delivers broad range of solutions for aviation and
+                security. Koris works with clients to help identify the
+                opportunities/risks, new strategy, business plan, optimal fleet
+                types and network design; business model, documentations, growth
+                rates and performance targets that can be easily followed and
+                implemented.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- =======last-bubles=========== -->
+        <div class="mt-5 row">
+          <div class="col-sm-6 col-lg-4">
+            <div data-aos="fade-right" data-aos-once="true" class="maker card">
+              <h3>UAV Operations, Training and Maintenance</h3>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div data-aos="fade-up" data-aos-once="true" class="maker card">
+              <h3>UAV Design, Manufacturing and Sale</h3>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div data-aos="fade-down" data-aos-once="true" class="maker card">
+              <h3>Aircraft Operations and Support Services</h3>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div data-aos="fade-left" data-aos-once="true" class="maker card">
+              <h3>Aerospace and Communications Services</h3>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div data-aos="fade-right" data-aos-once="true" class="maker card">
+              <h3>Aviation & Security Consultancy Services</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- ==========================VISION-SECTION============================== -->
+    <div class="partner">
+      <h1 class="head mb-4">OUR VISSION</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div
+            data-aos="fade-right"
+            data-aos-once="true"
+            class="shadow vission"
+          >
+            <div class="row">
+              <div class="col-md-3">
+                <img
+                  src="./images/industry.svg"
+                  data-aos="zoom-in"
+                  data-aos-delay="250"
+                  style="height: 100px"
+                  data-aos-once="true"
+                />
+              </div>
+              <div class="col-md-9">
+                <p>
+                  To be an industry leader for Unmanned Aerial Solutions in
+                  Nigeria.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div data-aos="zoom-in" data-aos-once="true" class="shadow vission">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./images/provideSVG.svg" style="height: 100px" />
+              </div>
+              <div class="col-md-9">
+                <p>
+                  To provide cost effective, yet professional aerial video
+                  graphic services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div data-aos="fade-left" data-aos-once="true" class="shadow vission">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./images/droneSVG.svg" style="height: 100px" />
+              </div>
+              <div class="col-md-9">
+                <p>
+                  To commit to using UAV technology in a responsible and ethical
+                  manner.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div data-aos="fade-up" data-aos-once="true" class="shadow vission">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./images/provideSVG.svg" style="height: 100px" />
+              </div>
+              <div class="col-md-9">
+                <p>
+                  To provide our customers with cutting edge advanced imagery
+                  with post-analytical solutions for more informed decision
+                  making.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===================================PARTNER-SLIDE================================== -->
+    <div class="partner" id="partners">
+      <div class="row">
+        <h1 class="head">OUR PARTNERS</h1>
+        <div class="col-md-6 slider-text">
+          <div data-aos="fade-right" data-aos-once="true">
+            <div id="div"></div>
+            <h2>KORIS AVIATION</h2>
+            <p>
+              Koris Aviation understands that trying to do everything by
+              yourself is a fast track to failure. We seek and develop long
+              lasting relationships with our partners to offer product
+              enhancement and differentiation. This approach helps us to provide
+              the best possible service for our clients. Our strategic
+              partnership with the Schiebel-GmbH and Springfountain
+              Infrastructure Ltd provides the flexibility to create tailored
+              solutions not available elsewhere at low cost.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="col-md-6 slider-image"
+          data-aos="zoom-in-left"
+          data-aos-once="true"
+        >
+          <div>
+            <img
+              src="./images/cc.2ba7a3bb49c76ad0079b.jpg"
+              alt="part"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-md-6 partners-slide"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            data-aos-once="true"
+          >
+            <img src="./images/sprng.png" alt="sch" class="img-fluid" />
+            <p class="text-dark mt-5">
+              Springfountain Infrastructure Limited (SIL) is one of the leading
+              Infrastructure Development Companies and Aviation Solution
+              Providers in Nigeria. They provide infrastructure to the Aviation,
+              Maritime and Mining Sectors across the West African Region. They
+              are a multi-disciplinary organisation with strengths and
+              expertise, in financial and engineering project conceptualisation
+              and management. As project developers, they identify the right
+              team to form consortia that delivers value and satisfaction to
+              customers.
+            </p>
+          </div>
+          <div
+            class="col-md-6 partners-slide"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            data-aos-once="true"
+          >
+            <img src="./images/schiebel.png" alt="sch" class="img-fluid sch" />
+            <p class="text-dark mt-5">
+              Founded in 1951 in Vienna, the globally operating Schiebel Group
+              focuses on the development, testing and production of the
+              revolutionary CAMCOPTER® S-100 Unmanned Air System (UAS).
+              Certified to meet AS / EN 9100 standards, Schiebel has built an
+              international reputation for producing high-tech military,
+              commercial and humanitarian products, which are backed by
+              exceptional after-sales service and support. Schiebel maintains
+              facilities in Vienna (Austria), Wiener Neustadt (Austria),
+              Washington, DC (USA), Abu Dhabi (UAE), and Shoalhaven (Australia).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================FLEATER-SLIDE====================================== -->
+    <div class="fleet" id="fleet">
+      <div>
+        <div class="mx-0 my-3 row">
+          <h1 class="head">OUR FLEET</h1>
+          <div class="col-md-6 fleeter">
+            <h1 data-aos="fade-right" data-aos-once="true" data-aos-once="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              S-100 CAMCOPTER
+            </h1>
+            <div data-aos="fade-up" data-aos-once="true">
+              <p id="initialText1">
+                Schiebel’s CAMCOPTER® S-100 Unmanned Air System (UAS) is a
+                proven capability for military and civilian applications. The
+                Vertical Takeoff and Landing (VTOL) UAS needs no prepared area
+                or supporting launch or recovery equipment. It op...
+              </p>
+              <p id="additionalText1" style="display: none">
+                Schiebel’s CAMCOPTER® S-100 Unmanned Air System (UAS) is a
+                proven capability for military and civilian applications. The
+                Vertical Takeoff and Landing (VTOL) UAS needs no prepared area
+                or supporting launch or recovery equipment. It operates day and
+                night, under adverse weather conditions, with a range out to 200
+                km, both on land and at sea. The S-100 navigates automatically
+                via pre-programmed GPS waypoints or can be operated directly
+                with a pilot control unit. Missions are planned and controlled
+                via a simple point-and-click graphical user interface.
+                High-definition payload imagery is transmitted to the control
+                station in real time. Using "fly-by-wire" technology controlled
+                by redundant flight computers, the UAV can complete its mission
+                automatically in the most complex of electromagnetic
+                environments. Its carbon fiber and titanium fuselage provides
+                capacity for a wide range of payload / endurance combinations.
+              </p>
+              <a
+                href="./READMORE/S-100 CAMCOPTER.html"
+                rel="noopener noreferrer"
+              >
+                <button>
+                  Read More <i class="bx bxs-right-arrow-alt"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-md-6 fleeter-image"
+            data-aos="zoom-in-left"
+            data-aos-once="true"
+            -imafleeter-image
+          >
+            <img class="img-fluid" src="./images/capcuter.png" alt="drone" />
+          </div>
+        </div>
+        <div class="mx-0 my-3 row">
+          <div
+            class="col-md-6 fleeter-image"
+            data-aos="zoom-in-right"
+            data-aos-once="true"
+            -imafleeter-image
+          >
+            <img class="img-fluid" src="./images/rtk.png" alt="drone" />
+          </div>
+          <div class="col-md-6 fleeter">
+            <h1 data-aos="zoom-in-left" data-aos-once="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              MATRICE 300 RTK
+            </h1>
+            <div data-aos="fade-up" data-aos-once="true">
+              <p id="initialText2">
+                The Matrice 300 RTK is DJI’s latest commercial drone platform
+                that takes inspiration from modern aviation systems. Offering up
+                to 55 minutes of flight time, advanced AI capabilities, 6
+                Directional Sensing & Positioning and more, the M300...
+              </p>
+              <p id="additionalText2" style="display: none">
+                The Matrice 300 RTK is DJI’s latest commercial drone platform
+                that takes inspiration from modern aviation systems. Offering up
+                to 55 minutes of flight time, advanced AI capabilities, 6
+                Directional Sensing & Positioning and more, the M300 RTK sets a
+                whole new standard by combining intelligence with
+                high-performance and unrivaled reliability. The all-new OcuSync
+                Enterprise enables transmission up to 15 km away and supports
+                triple-channel3 1080p video. Real-time auto-switching between
+                2.4 GHz and 5.8 GHz4 enables more reliable flight near
+                high-interference environments, while AES-256 encryption offers
+                secure data transmission.
+              </p>
+              <a href="./READMORE/matrice.html" rel="noopener noreferrer">
+                <button onclick="redirectToPage()">
+                  Read More <i class="bx bxs-right-arrow-alt"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mx-0 my-3 row">
+          <div class="col-md-6 fleeter">
+            <h1 data-aos="fade-right" data-aos-once="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              MATRICE 210 RTK V2
+            </h1>
+            <div data-aos="fade-up" data-aos-once="true">
+              <p id="initialText3">
+                Built to Endure. Engineered to Adapt. The ultimate platform for
+                aerial productivity combines a rugged design and simple
+                configurability to work as a solution for a variety of
+                industrial applications. Improvements to the M200 Series V2 ...
+              </p>
+              <p id="additionalText3" style="display: none">
+                Built to Endure. Engineered to Adapt. The ultimate platform for
+                aerial productivity combines a rugged design and simple
+                configurability to work as a solution for a variety of
+                industrial applications. Improvements to the M200 Series V2
+                enhance intelligent control systems, flight performance, and add
+                flight safety and data security features.
+              </p>
+              <a href="./READMORE/matrice210.html" rel="noopener noreferrer">
+                <button>
+                  Read More <i class="bx bxs-right-arrow-alt"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-md-6 fleeter-image"
+            data-aos="zoom-in-left"
+            data-aos-once="true"
+            -imafleeter-image
+          >
+            <img class="img-fluid" src="./images/rtkv2.png" alt="drone" />
+          </div>
+        </div>
+        <div class="mx-0 my-3 row">
+          <div
+            class="col-md-6 fleeter-image"
+            data-aos="zoom-in-right"
+            data-aos-once="true"
+            -imafleeter-image
+          >
+            <img class="img-fluid" src="./images/series.png" alt="drone" />
+          </div>
+          <div class="col-md-6 fleeter">
+            <h1 data-aos="zoom-in-left" data-aos-once="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              MARVIC 2 SERIES
+            </h1>
+            <div data-aos="fade-up" data-aos-once="true">
+              <p id="initialText4">
+                Built to Empower. Destined to Serve. Designed to empower a new
+                generation of workers, the Mavic 2 Enterprise is the ultimate
+                expression of a tool that delivers beyond expectation to meet
+                current workplace challenges and future demands. Oper...
+              </p>
+              <p id="additionalText4" style="display: none">
+                Built to Empower. Destined to Serve. Designed to empower a new
+                generation of workers, the Mavic 2 Enterprise is the ultimate
+                expression of a tool that delivers beyond expectation to meet
+                current workplace challenges and future demands. Operate with
+                Clarity and Enhanced Vision For enhanced image visibility on all
+                your captured data, Isotherm helps you get accurate heat
+                measurements on a variety of objects and scenarios. With the
+                Customize feature, you can set predefined Isotherm settings to
+                suit your operational needs.
+              </p>
+              <a href="./READMORE/maevic.html" rel="noopener noreferrer">
+                <button>
+                  Read More <i class="bx bxs-right-arrow-alt"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =================================CENTER-SECTION====================================== -->
+    <div class="container-fluid">
+      <div class="center">
+        <div class="linear"></div>
+        <h1>You're in good hands</h1>
+
+        <p>
+          We work with you to help identify the opportunities/risks, new
+          strategies, documentations and performance targets that can be easily
+          followed and implemented. We provide our customers with cutting edge,
+          advanced imagery with post-analytical solutions for more informed
+          decisions. We are totally committed to using UAV technology in a
+          responsible and ethical manner.
+        </p>
+
+        <button>Learn More</button>
+      </div>
+    </div>
+    <!-- besfdghjnm, -->
+        <div class="partner">
+          <h1 class="head">OUR SERVICES</h1>
+        
+    <div class="update-construction" id="services">
+      <div class="construction shadow">
+        <img src="./images/Monitoring.863bee906970f783dce1.jpg" alt="" />
+        <div class="h4">
+          <h4>Monitoring Of Land & Coastal Areas</h4>
+        </div>
+        <div class="card-footer">
+          <a href="./READMORE/monitoring land.html" rel="noopener noreferrer">
+            <button onclick="redirectToPage()">
+              Read More <i class="bx bxs-right-arrow-alt"></i></button
+          ></a>
+        </div>
+      </div>
+      <div class="construction shadow">
+        <img src="./images/Inspections.17f53aba8c1a49e36765.jpg" alt="" />
+
+        <div class="h4">
+          <h4>Inspections of Critical Infrastructure</h4>
+        </div>
+        <div class="card-footer">
+          <a href="./READMORE/inspection.html" rel="noopener noreferrer">
+            <button onclick="redirectToPage()">
+              Read More <i class="bx bxs-right-arrow-alt"></i></button
+          ></a>
+        </div>
+      </div>
+      <div class="construction shadow">
+        <img src="./images/MiningSites.e19b7e9c7378506e1437.jpg" alt="" />
+        <div class="h4" style="padding-bottom: 50px">
+          <h4>Monitoring of Mining Sites</h4>
+        </div>
+        <div class="card-footer">
+          <a href="./READMORE/monitoring.mining.html" rel="noopener noreferrer">
+            <button onclick="redirectToPage()">
+              Read More <i class="bx bxs-right-arrow-alt"></i></button
+          ></a>
+        </div>
+      </div>
+      <div class="construction shadow">
+        <img src="./images/Forestry.cdaf1e2f72a31b487aa4.jpg" alt="" />
+        <div class="h4">
+          <h4>Forestry, Agriculture & Wildlife Monitoring</h4>
+        </div>
+        <div class="card-footer">
+          <a href="./READMORE/forestry.html" rel="noopener noreferrer">
+            <button onclick="redirectToPage()">
+              Read More <i class="bx bxs-right-arrow-alt"></i></button
+          ></a>
+        </div>
+      </div>
+      <div class="construction shadow">
+        <img src="./images/SurveyMapping.375528b992c7372fdc17.jpg" alt="" />
+        <div class="h4">
+          <h4>Survey and Mapping</h4>
+        </div>
+        <div class="card-footer">
+          <a href="./READMORE/survey.html" rel="noopener noreferrer">
+            <button onclick="redirectToPage()">
+              Read More <i class="bx bxs-right-arrow-alt"></i></button
+          ></a>
+        </div>
+      </div>
+      <div class="construction shadow">
+        <img src="./images/RealEstate.b8bc99003767d417d0ca.jpg" alt="" />
+        <div class="h4">
+          <h4>Real Estate</h4>
+        </div>
+        <div class="card-footer">
+          <a href="./READMORE/real estate.html" rel="noopener noreferrer">
+            <button onclick="redirectToPage()">
+              Read More <i class="bx bxs-right-arrow-alt"></i></button
+          ></a>
+        </div>
+      </div>
+      <div class="construction shadow">
+        <img src="./images/SearchAndRescue.609ef08669f651c239af.jpg" alt="" />
+        <div class="h4">
+          <h4>Search And Rescue</h4>
+        </div>
+        <div class="card-footer">
+          <a href="./READMORE/search and rescue.html" rel="noopener noreferrer">
+            <button onclick="redirectToPage()">
+              Read More <i class="bx bxs-right-arrow-alt"></i></button
+          ></a>
+        </div>
+      </div>
+      <div class="construction shadow">
+        <img src="./images/EventCoverage.e7fd7b4367c5aa32bec1.jpg" alt="" />
+        <div class="h4">
+          <h4>Event Coverage</h4>
+        </div>
+        <div class="card-footer">
+          <a href="./READMORE/event coverage.html" rel="noopener noreferrer">
+            <button onclick="redirectToPage()">
+              Read More <i class="bx bxs-right-arrow-alt"></i></button
+          ></a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- ==================================OUR-TEAMS-HEAD=========================================== -->
+    <div class="container-fluid" id="team">
+      <div class="second-center">
+        <div id="di" class="linear4"></div>
+
+        <div class="heading white-heading">Our team</div>
+        <div id="div" style="margin: auto; width: 15%"></div>
+      </div>
+    </div>
+
+    <!-- ==================================OUR-TEAMS=========================================== -->
+    <div class="container" id="event">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="our-team shadow mb-5">
+            <div class="pic">
+              <img src="./images/isah kuta.jpg" alt="team_image" />
+            </div>
+            <div class="team-content">
+              <h4 class="title">ISAH KUTA ABDUL</h4>
+              <span class="px-1 post">Managing Director</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="our-team shadow mb-5">
+            <div class="pic">
+              <img src="./images/fatima muhammad.jpg" alt="team_image" />
+            </div>
+            <div class="team-content">
+              <h4 class="title">Fatima Muhammad</h4>
+              <span class="px-1 post">Company Secretary</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="our-team shadow mb-5">
+            <div class="pic">
+              <img src="./images/Amir Saleh-Bala.jpeg" alt="team_image" />
+            </div>
+            <div class="team-content">
+              <h4 class="title">Amir Saleh-Bala</h4>
+              <span class="px-1 post">Head of Operations</span>
+            </div>
+            <ul class="social"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="our-team shadow mb-5">
+            <div class="pic">
+              <img src="./images/abubakar sadiq.png" alt="team_image" />
+            </div>
+            <div class="team-content">
+              <h4 class="title">ABUBAKAR SADIQ</h4>
+              <span class="px-1 post">Business Development Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="our-team shadow mb-5">
+            <div class="pic">
+              <img
+                src="./images/CAPT. Abdulkadir S Abdulkadir.png"
+                alt="team_image"
+              />
+            </div>
+            <div class="team-content">
+              <h4 class="title">CAPT. Abdulkadir S Abdulkadir</h4>
+              <span class="px-1 post">Chief Pilot</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="our-team shadow mb-5">
+            <div class="pic">
+              <img src="./images/hamza muhammad.jpg" alt="team_image" />
+            </div>
+            <div class="team-content">
+              <h4 class="title">HAMZA MUHAMMED</h4>
+              <span class="px-1 post">Quality and Safety Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="our-team shadow mb-5">
+            <div class="pic">
+              <img src="./images/mary.jpg" alt="team_image" />
+            </div>
+            <div class="team-content">
+              <h4 class="title">MARY MICHAEL</h4>
+              <span class="px-1 post">Public Relations Officer</span>
+            </div>
+            <ul class="social"></ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="our-team shadow mb-5">
+            <div class="pic">
+              <img src="./images/Muhammed Muhammed Abba.png" alt="team_image" />
+            </div>
+            <div class="team-content">
+              <h4 class="title">Muhammed Muhammed Abba</h4>
+              <span class="px-1 post">Finance Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==================================FOOTER-SECTION=========================================== -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+              <div class="logo-widget footer-widget">
+                <figure class="logo-box">
+                  <a href="#"
+                    ><img src="images/logo2.69d181293abef1ab7d66.png" alt=""
+                  /></a>
+                </figure>
+                <div class="text">
+                  <p>
+                    We reduce man hour and cost, improve safety and efficiency
+                  </p>
+                  <a href="#services">
+                    <button type="button">
+                      Our Services
+                      <i class="bx bxs-right-arrow-alt"></i></button
+                  ></a>
+                  <p>Connect With Us:@korisaviation</p>
+                </div>
+                <ul class="footer-social">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/korisaviation"
+                      target="_blank"
+                      ><i class="bx bxl-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/korisaviation/" target="_blank"
+                      ><i class="bx bxl-twitter"></i
+                    ></a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.instagram.com/korisaviation/"
+                      target="_blank"
+                      ><i class="bx bxl-instagram-alt"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/korisaviation/"
+                      target="_blank"
+                      ><i class="bx bxl-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 offset-lg-2 footer-column">
+              <div class="service-widget footer-widget">
+                <div class="footer-title">Other Services </div>
+                <ul class="list">
+                  <li><a href="#">UAV Operations,Training & Maintenance</a></li>
+                  <li><a href="#">UAV Design, Manufacturing & Sales</a></li>
+                  <li>
+                    <a href="#">Aircraft Operations & Support Services</a>
+                  </li>
+                  <li><a href="#">Aerospace & Communications</a></li>
+                  <!-- <li><a href="#">Privacy and Terms</a></li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footer-widget">
+              <div class="contact-widget footer-widget">
+                <div class="footer-title">Contacts Us</div>
+                <div class="text">
+                  <p>
+                    No 1 ME Ahmed Street, NAF Valley Estate, Asokoro District
+                    Abuja Nigeria
+                  </p>
+                  <p>Phone Number: +2347026534935</p>
+                  <p>WhatsApp Number: +2348122140098</p>
+                  <p>Email: inquiry@korisaviation.ng</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- main-footer end -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 column">
+            <div class="copyright">
+              <a href="#">Koris</a> &copy; 2023 All Right Reserved
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 column">
+            <ul class="footer-nav">
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
