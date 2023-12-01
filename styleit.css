@@ -163,9 +163,8 @@
 }
 /* =====================slider-css==================== */
 .slider {
-  padding: 20px;
   border-radius: 10px;
-    overflow: hidden;
+  overflow: hidden;
 }
 #div {
   height: 5px;
@@ -179,6 +178,7 @@
   width: 100%;
   height: auto;
   box-shadow: 0 35px 35px rgb(167, 166, 166);
+  margin: 0;
 }
 
 .slider-text {
