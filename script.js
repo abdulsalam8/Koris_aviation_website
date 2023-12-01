@@ -90,10 +90,24 @@ window.addEventListener("scroll", function () {
     });
   }
 });
-function redirectToPage() {
-// Storing the scroll position in sessionStorage
-sessionStorage.setItem("scrollPosition", window.pageYOffset);
-}
+// function redirectToPage() {
+// // Storing the scroll position in sessionStorage
+// sessionStorage.setItem("scrollPosition", window.pageYOffset);
+// }
 // Store the current scroll position before redirecting
 
+//document.addEventListener("click", function () {
+  // Check if the current URL contains "#fleet"
+  //if (window.location.href.includes("#fleet")) {
+    // alert("cool");
+    // Get the element by its ID
+   // var yourElement = document.getElementById("fleet");
+
+    // Add marginTop style
+    // yourElement.style.marginTop = "10000px"; // Adjust the value as needed
+ // }
+//});
+
 AOS.init();
+
+
