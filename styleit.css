@@ -620,13 +620,13 @@
 .our-team .title {
   font-size: 22px;
   font-weight: 700;
-  color: var(--button-color);
+  color: var(--primary-color);
   letter-spacing: 1px;
   margin: 5px 0;
 }
 .our-team .post {
   display: block;
-  color: var(--button-color);
+  color: var(--primary-color);
   font-size: 15px;
 }
 .our-team {
