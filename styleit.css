@@ -200,7 +200,7 @@
 }
 
 .slider-text p {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 500;
   text-align: justify;
   max-width: 800px;
@@ -347,6 +347,7 @@
 }
 .fleeter p {
   font-size: 23px;
+  text-align: justify;
 }
 .fleeter button {
   width: 200px;
@@ -617,7 +618,7 @@
 }
 .our-team .post {
   display: block;
-  color: var(--button-color);
+  color: var(--primary-color);
   font-size: 15px;
 }
 .our-team {
@@ -1179,7 +1180,7 @@ ul {
     align-items: center;
     text-align: center;
     background-color: var(--button-color);
-    transition: all 0.42s;
+    transition: all 0.42s; 
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
